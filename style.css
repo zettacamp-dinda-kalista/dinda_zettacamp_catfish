@@ -11,7 +11,6 @@ html {
 body {
   font-family: 'Poppins', sans-serif;
   font-size: 14px;
-  color: black;
 }
 
 /* header */
@@ -45,7 +44,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 75px;
+    height: 70px;
     background-color: purple;
     width: 100%;
     z-index: 9;

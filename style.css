@@ -1,0 +1,27 @@
+img {
+    width: 10%;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+/*footer*/
+
+footer {
+    padding: 0.5em;
+    width: 99%;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position: absolute;
+    bottom: 0;
+    height: 30px;
+    background-color: purple;
+  }
+  
+  footer p {
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    list-style: none;
+  }

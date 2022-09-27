@@ -5,111 +5,144 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" />
-    <link rel="icon" href="../img/letterpad.ico" />
+    <link rel="icon" href="../img/skincare.png" />
     <title> HTML DAY 3 </title>
 </head>
 <body>
     <header>
-        <h1 style="text-align: center;"> BEAUTY SHOP </h1>
+        <h1 style="text-align: center;"> Product List </h1>
     </header>
 
     <div>
-        <table border="1" class="center" style="width:100%; text-align: left; margin-bottom: 20px;">
-            <tr>
-                <th style="width:40%; text-align: center;">Name</th>
-                <th style="text-align: center;">Amount</th>
-                <th style="text-align: center;">Price</th>
-                <th style="text-align: center;">Total</th>
-            </tr>
-            <tr>
-                <td>
-                    <img class="images" src="../img/sun.png"><strong>Sunscreen</strong> 
-                    <ol>
-                        <li>
-                            <img class="images" src="../img/nivea.png"> Nivea
-                            <ul>
-                                <li>
-                                    <img class="images" src="../img/nivea_man.png"> Nivea Man
-                                </li>
-                                <li>
-                                    <img class="images" src="../img/spf_50.png"> Nivea SPF 50++
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <img class="images" src="../img/emina.png"> Emina
-                        </li>
-                        <li>
-                            <img class="images" src="../img/wardah.png"> Wardah
-                        </li>
-                        <li>
-                            <img class="images" src="../img/joylab.png"> Joylab
-                        </li>
-                    </ol>
-                </td>
+        <table border="3" class="center" style="width:90%; text-align: left; margin: auto; border-color: rgb(172, 29, 216);">
+            <thead style="text-align: center; background-color: rgb(192, 152, 230);">
+                <tr>
+                    <th style="width:40%; ">PRODUCT NAME</th>
+                    <th>AMOUNT</th>
+                    <th>PRICE</th>
+                    <th>TOTAL</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <a href="detail.html"><img class="images" src="../img/sun.png"></a><strong>Sunscreen</strong> 
+                        <ol>
+                            <li>
+                                <img class="images" src="../img/nivea.png"> Nivea
+                                <ul>
+                                    <li>
+                                        <img class="images" src="../img/nivea_man.png"> Nivea Man
+                                    </li>
+                                    <li>
+                                        <img class="images" src="../img/spf_50.png"> Nivea SPF 50++
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <img class="images" src="../img/emina.png"> Emina
+                            </li>
+                            <li>
+                                <img class="images" src="../img/wardah.png"> Wardah
+                            </li>
+                            <li>
+                                <img class="images" src="../img/joylab.png"> Joylab
+                            </li>
+                        </ol>
+                    </td>
 
-                <td>
-                    <p> 6 </p>
-                </td>
+                    <td>
+                        <p> 6 </p>
+                    </td>
 
-                <td>
-                    <p> Rp 20.000 </p>
-                </td>
+                    <td>
+                        <p> Rp 20.000 </p>
+                    </td>
 
-                <td>
-                    <p> Rp 120.000 </p>
-                </td>
-            </tr>
+                    <td>
+                        <p> Rp 120.000 </p>
+                    </td>
+                </tr>
 
-            <tr>
-                <td>
-                    <img class="images" src="../img/lipstik.png"><strong>Lipstik</strong>
-                    <ol>
-                        <li>
-                            <img class="images" src="../img/emina_lips.png"> Emina
-                        </li>
-                        <li>
-                            <img class="images" src="../img/you_lips.png"> Y.O.U
-                        </li>
-                        <li>
-                            <img class="images" src="../img/wardah_lipstik.png"> Wardah
-                        </li>
-                        <li>
-                            <img class="images" src="../img/revlon_lips.png"> Revlon
-                        </li>
-                    </ol>
-                </td>
+                <tr>
+                    <td>
+                        <img class="images" src="../img/lipstik.png"><strong>Lipstik</strong>
+                        <ol>
+                            <li>
+                                <img class="images" src="../img/emina_lips.png"> Emina
+                            </li>
+                            <li>
+                                <img class="images" src="../img/you_lips.png"> Y.O.U
+                            </li>
+                            <li>
+                                <img class="images" src="../img/wardah_lipstik.png"> Wardah
+                            </li>
+                            <li>
+                                <img class="images" src="../img/revlon_lips.png"> Revlon
+                            </li>
+                        </ol>
+                    </td>
 
-                <td>
-                    <p> 4 </p>
-                </td>
+                    <td>
+                        <p> 4 </p>
+                    </td>
 
-                <td>
-                    <p> Rp 40.000 </p>
-                </td>
+                    <td>
+                        <p> Rp 40.000 </p>
+                    </td>
 
-                <td>
-                    <p> Rp 120.000 </p>
-                </td>
-            </tr>
+                    <td>
+                        <p> Rp 120.000 </p>
+                    </td>
+                </tr>
+            </tbody>
+
+            <tfoot>
+                <tr>
+                    <td colspan="3">
+                        <p><b>TOTAL</b></p>
+                    </td>
+                    <td>
+                        <p><b>Rp 240.000</b></p>
+                    </td>
+                </tr>
+            </tfoot>
         </table>
     </div>
 
-    <h3 style="text-align: center;">Add Produk</h3>
-
-    <div class="form-review" style="text-align: center; width: 30%; float: center; display: block; margin: auto;">
-        <form onsubmit="alert('Form is being submitted')">
-            <div class="mb-3">
-                <label class="form-label">Produk Name<span class="asterik">*</span></label>
-                <input type="text" class="form-control" id="name-input" minlength="3" placeholder="name..." required>
-            </div>
-
-            <button onclick="console.log('Click submit button')">Submit</button>
-        </form>
+    <div class="wrapper">
+        <div class="container bg-white shadow" style="text-align: center; width: 30%; float: center; margin: auto;">
+            <form class="form" action="#" id="form">
+                <div class="form-group form-title">
+                    <label for="title">Product Name</label>
+                    <input type="text" id="title" name="title" required>
+                </div>
+                <input type="submit" value="Submit" name="Submit" class="btn-submit">
+            </form>
+        </div>
+        <div class="container">
+            <table border="1" style="width: 60%; margin: auto;" >
+                <tr>
+                    <th>
+                        <h2 class="container-header">Product Name</h2>
+                    </th>             
+                </tr>
+                <tr>
+                    <td>
+                        <ol>
+                            <li class="list-item" id="todos" style="text-align: center; width: 30%; float: center; display: block; margin: auto;"></li>
+                        </ol>
+                    </td>
+                </tr>
+            </table>     
     </div>
 
     <footer>
         <p style="text-align: center; "> &copy; Dinda Kalista Sarimu </p>
     </footer>
+
+    <script src="../js/script.js" type="text/javascript">
+
+    </script>
 </body>
 </html>

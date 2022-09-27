@@ -1,3 +1,6 @@
+body{
+  background-color: rgb(247, 247, 234);
+}
 h3 {
   text-align: center;
 }
@@ -28,6 +31,7 @@ p {
 strong{
   margin-left: 3px;
 }
+
 /*footer*/
 
 footer {
@@ -87,5 +91,5 @@ input[type=text] {
   margin-top: 6px;
   margin-bottom: 16px;
 }
-  
+
 

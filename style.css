@@ -1,6 +1,6 @@
 body{
   background-color: rgb(247, 247, 234);
-  width: 100vw;
+  overflow-x: hidden;
 }
 
 /*iframe*/
@@ -94,6 +94,17 @@ input[type=number] {
   margin-top: 6px;
   margin-bottom: 16px;
   margin-left: 93px;
+}
+
+input[type=url] {
+  width: 25%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  margin-left: 56px;
 }
 
 textarea{

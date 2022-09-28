@@ -1,0 +1,176 @@
+body{
+  background-color: rgb(247, 247, 234);
+  width: 100vw;
+}
+
+/*iframe*/
+
+.frame{
+  align-items: center;
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+}
+
+/*header*/
+header{
+  background-color: rgb(102, 38, 102);
+  color: white;
+  margin: auto;
+  position: relative;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+ /*form*/
+ form {
+  margin: 2em 3em;
+  padding: 1.0em;
+  border: 3px dotted purple;
+  width: 50%;
+  margin: auto;
+  margin-bottom: 80px;
+}
+.form-control {
+  display: block;
+  width: 90%;
+  min-height: 45px;
+  padding: 0.3em;
+  font-size: 1em;
+  color: purple;
+  background-color: rgb(213, 183, 247);
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+.form-label {
+  padding-bottom: 10px;
+  font-weight: bold;
+  font-style: normal;
+  font-size: small;
+  color: purple;
+  
+}
+input[type=text] {
+  width: 70%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 18px;
+}
+input[type=email] {
+  width: 70%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  margin-left: 80px;
+}
+
+input[type=tel] {
+  width: 70%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  margin-left: 53px;
+}
+
+input[type=number] {
+  width: 25%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  margin-left: 93px;
+}
+
+textarea{
+  width: 70%;
+  height: 80px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  vertical-align: middle;
+}
+
+input[type=submit] {
+  width: 25%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-left: 35%;
+  margin-right: 35%;
+  background-color: purple;
+  color: white;
+}
+
+/*civility*/
+.civ {
+  margin-left: 68px;
+}
+
+video{
+  text-decoration: none;
+  width: 80%;
+  padding-bottom: 30px;
+  padding-left: 10%;
+  padding-right: 50%;
+}
+
+audio{
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 50%;
+  color: blueviolet;
+}
+
+.pdf{
+  text-align: center;
+}
+
+th{
+  width: 20%;
+  margin-right: 0;
+}
+
+/*footer*/
+
+footer {
+  padding: 0.5em;
+  width: 98.8%;
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  position: relative;
+  bottom: 0;
+  height: 20px;
+  background-color: rgb(102, 38, 102);
+  left: 0;
+}
+
+footer p {
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  list-style: none;
+  margin-top: 2px;
+}
+
+
+

@@ -9,6 +9,9 @@ body{
   align-items: center;
   text-align: center;
 }
+iframe:hover {
+  border: 2px solid rgb(150, 15, 15);
+}
 
 h3 {
   text-align: center;
@@ -55,6 +58,15 @@ header{
   
 }
 input[type=text] {
+  width: 70%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 18px;
+}
+input[type=date] {
   width: 70%;
   padding: 12px;
   border: 1px solid #ccc;

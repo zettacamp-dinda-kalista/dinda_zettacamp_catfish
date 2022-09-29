@@ -3,6 +3,7 @@
   <head>
     <title>Biodata</title>
     <link rel="stylesheet" href="../style.css" />
+    <link rel="icon" href="../img/girl.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
 
@@ -17,105 +18,131 @@
 
         <ul class="nav-list">
           <li class="nav-item"><a href="index.html">Home</a></li>
-          <li class="nav-item"><a href="contact.html">Contact</a></li>
-          <li class="nav-item"><a href="about.html" >About Us</a>
+          <li class="nav-item"><a href="about.html" >About</a>
           </li>
         </ul>
       </nav>
-      <div tabindex="0" class="text" >
+      <div class="text" >
         <h1 class="hero__title">MY BIODATA</h1>
       </div>
     </header>
-    
-    <section>
-        <form>
-            <div>
-                <label>Civility</label>
-                <label class="civ">Mr</label>
-                <input type="radio" name="civility">
-                <label>Mrs</label>
-                <input type="radio" name="civility">
-            </div>
-            <div>
-                <label>First Name</label>
-                <input style="margin-left: 45px" type="text" name="fname" required>
-            </div>
-            <div>
-                <label>Last Name</label>
-                <input  style="margin-left: 45px" type="text" name="lname" required >
-            </div>
-            <div>
-                <label>Tanggal Lahir</label>
-                <input  style="margin-left: 28px" type="date" name="tanggal_lahir" required >
-            </div>
-            <div>
-                <label>Email</label>
-                <input type="email" name="email" placeholder="dinda@gmail.com" required>
-            </div>
-            <div>
-                <label>Telephone</label>
-                <input type="tel" id="phone" name="phone"
-                pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}"  placeholder="7621-9281-2029" required>
-            </div>
-            <div>
-                <label>Age</label>
-                <input type="number" id="age" name="age" min="0" required>
-            </div>
-            <div>
-                <label>Instagram</label>
-                <input type="url" name="ig" placeholder="https://www.instagram.com/dcxozy/" required>
-            </div>
-            <div>
-                <label>Program Study</label>
-                <select name="prodi" style="margin-left: 24px;padding: 12px; border-color: #ccc;">
-                    <option value="first">Informatika</option>
-                    <option value="second" selected>Sistem Informasi</option>
-                    <option value="third">Teknologi Informasi</option>
-                    <option value="fourth">Teknik Industri</option>
-                </select>
-            </div>
-            <div>
-                <label>Hobby</label>
-                <input type="checkbox" name="sport" value="sport"  style="margin-left: 78px; margin-top: 20px;">
-                <label>Volly Ball</label>
-                <input type="checkbox" name="cook" value="cook">
-                <label>Cooking</label>
-                <input type="checkbox" name="study" value="study">
-                <label>Learning</label>
-                <input type="checkbox" name="la" value="la">
-                <label>Lying Around</label>
-            </div>
-            <div>
-                <label>Description</label>
-                <textarea style="margin-left: 45px"></textarea>
-            </div>
-            <input type="submit" value="Submit" name="Submit" class="btn-submit">
-        </form>
-    </section>
 
-    <section>
-        <table border="1" width="100%">
-            <tr>
-                <th>Civility</th>
-                <th>First Name</th>
-                <th>Last Name</th>
-                <th>Tanggal Lahir</th>
-                <th>Email</th>
-                <th>Nomor Telephone</th>
-                <th>Age</th>
-                <th>Instagram</th>
-                <th>Program Study</th>
-                <th>Hobby</th>
-                <th>Description</th>
-            </tr>
-            <tr>
-                <td></td>
-            </tr>
-        </table>
-    </section>
+    <div class="container" style="width: 600px; margin: auto; background: hsl(240, 100%, 91%); padding: 10px">
+        <div id="gambar" style="width: 300px; margin:auto;"></div>
+    </div>
+    
+    <div class="wrapper" width="100%">
+        <div class="container bg-white shadow" style="margin: auto;">
+        <section>
+            <form class="form" action="#" id="form">
+                <div class="form-group form-fname">
+                    <label for="fname"> Name</label>
+                    <input style="margin-left: 75px" type="text" id="fname" name="fname" required>
+                </div>
+                <div class="form-group form-date">
+                    <label for="date">Tanggal Lahir</label>
+                    <input  style="margin-left: 28px" type="date" id="date" name="date" required>
+                </div>
+                <div>
+                    <label>Email</label>
+                    <input type="email" id="email" name="email" placeholder="dinda@gmail.com" >
+                </div>
+                <div>
+                    <label>Telephone</label>
+                    <input type="tel" id="phone" name="phone"
+                    pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}"  placeholder="7621-9281-2029" >
+                </div>
+                <div>
+                    <label>Age</label>
+                    <input type="number" id="age" name="age" min="0" >
+                </div>
+                <div>
+                    <label>Instagram</label>
+                    <input type="url" name="ig" id="ig" placeholder="https://www.instagram.com/dcxozy/" >
+                </div>
+                <div>
+                    <label>Program Study</label>
+                    <select name="prodi" style="margin-left: 24px;padding: 12px; border-color: #ccc;">
+                        <option value="first" name="prodi">Informatika</option>
+                        <option value="second" selected name="prodi">Sistem Informasi</option>
+                        <option value="third" name="prodi">Teknologi Informasi</option>
+                        <option value="fourth" name="prodi">Teknik Industri</option>
+                    </select>
+                </div>
+                <div>
+                    <label>Hobby</label>
+                    <input type="checkbox" name="sport" value="sport"  style="margin-left: 78px; margin-top: 20px;">
+                    <label>Volly Ball</label>
+                    <input type="checkbox" name="cook" value="cook">
+                    <label>Cooking</label>
+                    <input type="checkbox" name="study" value="study">
+                    <label>Learning</label>
+                    <input type="checkbox" name="la" value="la">
+                    <label>Lying Around</label>
+                </div>
+                <div>
+                    <label>Description</label>
+                    <textarea style="margin-left: 45px" name="desc"></textarea>
+                </div>
+                <div>
+                    <label>Foto</label>
+                    <input type="file" id="img" name="img" accept="image/*" style="margin-left: 90px"></input>
+                </div>
+                <input type="submit" value="Submit" name="Submit" class="btn-submit">
+            </form>
+        </section>
+        </div>
+
+        <div class="container">
+            <section>
+                <table border="3" style="width: 100%; margin: auto; margin-bottom: 20px; border-color: blueviolet;" >
+                    <tr>
+                        <th class="container-header">First Name</th>
+                        <th class="container-header">Tanggal Lahir</th>
+                        <th>Email</th>
+                        <th>Nomor Telephone</th>
+                        <th>Age</th>
+                        <th>Instagram</th>
+                        <th>Program Study</th>
+                        <th>Hobby</th>
+                        <th>Description</th>
+                        <th>Foto</th>
+                    </tr>
+                    <tr>
+                        <td>Dinda Kalista Sarimu</td>
+                        <td> 08 Maret 2001 </td>
+                        <td>dinda@gmail.com</td>
+                        <td>0812-5475-2240</td>
+                        <td style="text-align: center;">21</td>
+                        <td><a href="https://www.instagram.com/dcxozy/">https://www.instagram.com/dcxozy/</a></td>
+                        <td>Informatika</td>
+                        <td>Olahraga</td>
+                        <td style="text-align: center;">-</td>
+                        <td><img src="../img/girl.png" style="width: 40px; "></td>
+                    </tr>
+                    <tr>
+                        <td class="list-item" id="todos" style="text-align: center; float: center; display: block; margin: auto;"></td>
+                        <td id="todos1"></td>
+                        <td id="todos2"></td>
+                        <td id="todos3"></td>
+                        <td id="todos4"></td>
+                        <td id="todos5"></td>
+                        <td id="todos6"></td>
+                        <td id="todos7"></td>
+                        <td id="todos8"></td>
+                        <td><div id="display-image" width="50px"></div></td>
+                    </tr>
+                </table>
+            </section>
+        </div>
+    </div>
 
     <footer>
         <p style="text-align: center; "> &copy; Dinda Kalista Sarimu </p>
     </footer>
+
+    <script src="../js/script.js" type="text/javascript">
+
+    </script>
   </body>
 </html>

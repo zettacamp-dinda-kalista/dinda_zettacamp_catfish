@@ -2,7 +2,6 @@
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
     background-color: antiquewhite;
-    
 }
 /*TITLE, CASCADING*/
 .title {
@@ -44,7 +43,6 @@ p{
     font-size: 14px;
     
 }
-
 /*CARD*/
 .Card {
     width: 90%;
@@ -78,8 +76,9 @@ p{
     width: 90%;
     height: 200px;
     display: block;
-    margin: auto;
-    padding-top: 10px;
+    margin: 20px;
+    padding: 10px;
+    box-sizing: border-box;
 }
 /*mengatur font pada paragraf*/
 .card1 p{

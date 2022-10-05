@@ -68,8 +68,8 @@ p {
 }
 
 #size {
-    height          : 402px;
-    text-align      : justify;
+    height: 402px;
+    text-align: justify;
 }
 
 li{
@@ -85,7 +85,6 @@ nav {
     background-color: black;
     opacity:  0.6;
     padding: 5px;
-   /* membuat navbar agar tidak berpindah saat dilakukannya scrolling*/
     position: sticky;
     top: 0;
     text-align: center;
@@ -105,9 +104,10 @@ nav {
     display: inline;
     list-style-type: none;
     margin-right: 20px;
+ }
+ ul{
     background-color: transparent;
  }
-
 .btn-submit{
     float: right;
     margin-top: 150px;

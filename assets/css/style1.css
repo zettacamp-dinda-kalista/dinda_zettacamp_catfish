@@ -10,23 +10,8 @@ img{
     display: block; 
     text-align: center;
 }
-/*images*/
-.images{
-    width: 100%;
-    height: 250px;
-    max-width: 235px;
-    margin: auto;
-}
-.Images{
-    width: 100%;
-    height: 150px;
-    max-width: 235px;
-  }
-  .Images:hover {
-    border: 1px solid rgb(150, 15, 15);
-  }
 
-/*album preview*/
+/*DETAILS*/
 
 .col-1 {width: 8.33%; }
 .col-2 {width: 16.66%; }
@@ -48,6 +33,7 @@ img{
 	border: 1px solid black;
 	}
 
+/*Pseudo Element*/
 .row::after{
 	content: "";
 	clear: both;
@@ -123,3 +109,7 @@ nav {
  ul{
      background-color: transparent;
  }
+
+ /*ABOUT*/
+
+ /*CONTACT*/

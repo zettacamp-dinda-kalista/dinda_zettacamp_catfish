@@ -67,13 +67,6 @@ body {
     text-align: center;
     padding-bottom: 150px;
  }
- @media screen and (max-width: 1000px) {
-    #content,
-    aside {
-        width: 100%;
-        padding: 0;
-    }
- }
  .tas{
     text-align: center;
     font-weight: bold;
@@ -103,7 +96,22 @@ a{
     display: flex;
     margin-left: 200px;
  }
-
+/*pseudo class*/
+.jam:hover{
+    background-color: #B7C4CF;
+    font-size: 20px;
+    border-radius: 5px;
+}
+.tas:hover{
+    background-color: #B7C4CF;
+    font-size: 20px;
+    border-radius: 5px;
+}
+.sepatu:hover{
+    background-color: #B7C4CF;
+    font-size: 20px;
+    border-radius: 5px;
+}
  footer {
     padding: 3px;
     color: black;

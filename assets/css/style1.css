@@ -1,0 +1,125 @@
+*{
+    background-color: #B7C4CF;
+    box-sizing: border-box;
+}
+img{
+    width: 50%; 
+    height: 350px; 
+    margin-left: auto; 
+    margin-right: auto;
+    display: block; 
+    text-align: center;
+}
+/*images*/
+.images{
+    width: 100%;
+    height: 250px;
+    max-width: 235px;
+    margin: auto;
+}
+.Images{
+    width: 100%;
+    height: 150px;
+    max-width: 235px;
+  }
+  .Images:hover {
+    border: 1px solid rgb(150, 15, 15);
+  }
+
+/*album preview*/
+
+.col-1 {width: 8.33%; }
+.col-2 {width: 16.66%; }
+.col-3 {width: 25%; }
+.col-4 {width: 33.33%; }
+.col-5 {width: 41.66%; }
+.col-6 {width: 50%; }
+.col-7 {width: 58.33%; }
+.col-8 {width: 66.66%; }
+.col-9 {width: 75%; }
+.col-10 {width: 83.33%; }
+.col-11 {width: 91.66%; }
+.col-12 {width: 100%; }
+
+
+[class*="col-"]{
+	float: left;
+	padding: 10px;
+	border: 1px solid black;
+	}
+
+.row::after{
+	content: "";
+	clear: both;
+	display: table;
+	}
+    
+.col-2{
+	width: 20%;
+	margin-top: 6px;
+    margin-left: 170px;
+
+}
+.col-6{
+	margin-top: 6px;
+}
+.col-12{
+	border: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+div {
+	text-align: justify;
+	}
+h3 {
+	color: black;
+	text-align: center;
+}
+p {
+	color: black;
+	font-size: 17px;
+}
+
+#size {
+    height          : 402px;
+    text-align      : justify;
+}
+
+li{
+    margin-left: 0;
+}
+p{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/*navbar*/
+nav {
+    background-color: black;
+    opacity:  0.6;
+    padding: 5px;
+   /* membuat navbar agar tidak berpindah saat dilakukannya scrolling*/
+    position: sticky;
+    top: 0;
+    text-align: center;
+ }
+ nav a {
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    color: white;
+    background-color: transparent;
+ }
+ 
+ nav a:hover {
+    font-weight: bold;
+ }
+ nav li {
+    display: inline;
+    list-style-type: none;
+    margin-right: 20px;
+    background-color: transparent;
+ }
+ ul{
+     background-color: transparent;
+ }

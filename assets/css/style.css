@@ -1,0 +1,116 @@
+body {
+    background-color: #B7C4CF;
+    background-size: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+ }
+ header {
+    display: inline;
+    margin: 0;
+ }
+ .menu {
+    font-size: 20px;
+    background-color: #D7C0AE;
+    background-size: 100%;
+    text-align: center;
+    color: white;
+    margin: 0;
+ }
+ h1,h2{
+    margin: 0;
+    color: black;
+}
+ .featured-image {
+    width: 225px;
+    height: 300px;
+    padding: 10px;
+    object-fit: cover;
+    object-position: center;
+    box-sizing: border-box;
+ }
+ .profile img {
+    width: 200px;
+ }
+ .Jam {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+    margin-left: 30px;
+    background-color: #967E76;
+    background-size: 100%;
+    border: 2px solid;
+ }
+ .Tas {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+    margin-left: 30px;
+    background-color: #967E76;
+    background-size: 100%;
+    border: 2px solid;
+ }
+ .Sepatu {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+    margin-left: 30px;
+    background-color: #967E76;
+    background-size: 100%;
+    border: 2px solid;
+ }
+ aside {
+    background-color: black;
+    color:  white;
+    text-align: center;
+    padding-bottom: 150px;
+ }
+ @media screen and (max-width: 1000px) {
+    #content,
+    aside {
+        width: 100%;
+        padding: 0;
+    }
+ }
+ .tas{
+    text-align: center;
+    font-weight: bold;
+    background-color: #D7C0AE;
+    font-size: 20px;
+    border-radius: 5px;
+ }
+ .sepatu{
+    text-align: center;
+    font-weight: bold;
+    background-color: #D7C0AE;
+    font-size: 20px;
+    border-radius: 5px;
+ }
+ .jam{
+    text-align: center;
+    font-weight: bold;
+    background-color: #D7C0AE;
+    font-size: 20px;
+    border-radius: 5px;
+ }
+a{
+     text-decoration: none;
+     color: black;
+ }
+ .row {
+    display: flex;
+    margin-left: 200px;
+ }
+
+ footer {
+    padding: 3px;
+    color: black;
+    background-color: #D7C0AE;
+    background-size: 100%;
+    text-align: center;
+    font-weight: bold;
+ }
+ 
+ 

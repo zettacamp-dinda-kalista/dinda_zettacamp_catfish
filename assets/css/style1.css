@@ -34,7 +34,7 @@ img{
 	}
 
 /*Pseudo Element*/
-.row::after{
+article::after{
 	content: "";
 	clear: both;
 	display: table;
@@ -74,6 +74,7 @@ p {
 
 li{
     margin-left: 0;
+    background-color: transparent;
 }
 p{
     font-family: 'Times New Roman', Times, serif;
@@ -106,10 +107,32 @@ nav {
     margin-right: 20px;
     background-color: transparent;
  }
- ul{
-     background-color: transparent;
- }
 
+.btn-submit{
+    float: right;
+    margin-top: 150px;
+}
  /*ABOUT*/
-
+ .table{
+    width: 70%;
+    margin: auto;
+    margin-bottom: 20px; 
+    border-color: brown;
+    color: black;
+    text-align: center;
+}
+.tas:nth-child(n) td{
+    background-color:#D7C0AE;
+}
+.jam:nth-child(n) td{
+    background-color:#bb8e6b;
+}
+.sepatu:nth-child(n) td{
+    background-color:#808080;
+}
  /*CONTACT*/
+ .container{
+    display: flex; 
+    margin: 30px;
+    padding: 20px;
+ }

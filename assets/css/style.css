@@ -7,7 +7,10 @@ body {
  }
  header {
     display: inline;
-    margin: 0;
+    margin-bottom: 100px;
+ }
+ main{
+    margin-top: 80px;
  }
  .menu {
     font-size: 20px;
@@ -16,6 +19,10 @@ body {
     text-align: center;
     color: white;
     margin: 0;
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
  }
  h1,h2{
     margin: 0;
@@ -37,9 +44,19 @@ body {
     border-radius: 5px;
     padding: 20px;
     margin-left: 30px;
-    background-color: #967E76;
+    background-color: #967E76 !important;
     background-size: 100%;
     border: 2px solid;
+ }
+ .Jam2{
+   background-color: brown;
+ }
+ .Jam3{
+   padding: 30px;
+   box-sizing: border-box;
+ }
+ .Jam4{
+    margin: 20px;
  }
  .Tas {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -51,6 +68,16 @@ body {
     background-size: 100%;
     border: 2px solid;
  }
+ .Tas2{
+   background-color: brown;
+ }
+ .Tas3{
+   padding: 30px;
+   box-sizing: border-box;
+ }
+ .Tas4{
+    margin: 20px;
+ }
  .Sepatu {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     border-radius: 5px;
@@ -60,6 +87,16 @@ body {
     background-color: #967E76;
     background-size: 100%;
     border: 2px solid;
+ }
+ .Sepatu2{
+   background-color: brown;
+ }
+ .Sepatu3{
+   padding: 30px;
+   box-sizing: border-box;
+ }
+ .Sepatu4{
+    margin: 20px;
  }
  .tas{
     text-align: center;
@@ -85,6 +122,12 @@ body {
 a{
      text-decoration: none;
      color: black;
+ }
+ a.active{
+    color: brown;
+ }
+ a:not(.active){
+    color: rgb(18, 32, 224);
  }
  .row {
     display: flex;
@@ -113,6 +156,10 @@ a{
     background-size: 100%;
     text-align: center;
     font-weight: bold;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
  }
  
  

@@ -1,0 +1,163 @@
+body {
+    background-color: #B7C4CF;
+    background-size: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+ }
+ header {
+    display: inline;
+    margin-bottom: 100px;
+ }
+ main{
+    margin-top: 80px;
+ }
+ .menu {
+    font-size: 20px;
+    background-color: #D7C0AE;
+    background-size: 100%;
+    text-align: center;
+    color: white;
+    margin: 0;
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+ }
+ h1,h2{
+    margin: 0;
+    color: black;
+}
+ .featured-image {
+    width: 225px;
+    height: 300px;
+    padding: 10px;
+    object-fit: cover;
+    object-position: center;
+    box-sizing: border-box;
+ }
+ .profile img {
+    width: 200px;
+ }
+ .Jam {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+    margin-left: 30px;
+    background-color: #967E76 !important;
+    background-size: 100%;
+    border: 2px solid;
+ }
+ .Jam2{
+   background-color: brown;
+ }
+ .Jam3{
+   padding: 30px;
+   box-sizing: border-box;
+ }
+ .Jam4{
+    margin: 20px;
+ }
+ .Tas {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+    margin-left: 30px;
+    background-color: #967E76;
+    background-size: 100%;
+    border: 2px solid;
+ }
+ .Tas2{
+   background-color: brown;
+ }
+ .Tas3{
+   padding: 30px;
+   box-sizing: border-box;
+ }
+ .Tas4{
+    margin: 20px;
+ }
+ .Sepatu {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+    margin-left: 30px;
+    background-color: #967E76;
+    background-size: 100%;
+    border: 2px solid;
+ }
+ .Sepatu2{
+   background-color: brown;
+ }
+ .Sepatu3{
+   padding: 30px;
+   box-sizing: border-box;
+ }
+ .Sepatu4{
+    margin: 20px;
+ }
+ .tas{
+    text-align: center;
+    font-weight: bold;
+    background-color: #D7C0AE;
+    font-size: 20px;
+    border-radius: 5px;
+ }
+ .sepatu{
+    text-align: center;
+    font-weight: bold;
+    background-color: #D7C0AE;
+    font-size: 20px;
+    border-radius: 5px;
+ }
+ .jam{
+    text-align: center;
+    font-weight: bold;
+    background-color: #D7C0AE;
+    font-size: 20px;
+    border-radius: 5px;
+ }
+a{
+     text-decoration: none;
+     color: black;
+ }
+ a.active{
+    color: brown;
+ }
+ a:not(.active){
+    color: rgb(18, 32, 224);
+ }
+ .row {
+    display: flex;
+    margin-left: 200px;
+ }
+/*pseudo class*/
+.jam:hover{
+    background-color: #B7C4CF;
+    font-size: 20px;
+    border-radius: 5px;
+}
+.tas:hover{
+    background-color: #B7C4CF;
+    font-size: 20px;
+    border-radius: 5px;
+}
+.sepatu:hover{
+    background-color: #B7C4CF;
+    font-size: 20px;
+    border-radius: 5px;
+}
+ footer {
+    padding: 3px;
+    color: black;
+    background-color: #D7C0AE;
+    background-size: 100%;
+    text-align: center;
+    font-weight: bold;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+ }

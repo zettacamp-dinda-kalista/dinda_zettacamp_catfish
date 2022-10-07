@@ -13,6 +13,9 @@ body {
     flex-wrap: wrap;
     margin-top: 50px;
     gap: 50px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto
   }
   
   .flex-container > div {

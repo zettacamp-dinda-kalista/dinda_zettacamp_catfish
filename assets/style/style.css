@@ -7,11 +7,24 @@ body {
  }
  header {
     display: inline;
-    margin-bottom: 100px;
  }
- main{
-    margin-top: 80px;
- }
+ .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    gap: 50px;
+  }
+  
+  .flex-container > div {
+    background-color: #f1f1f1;
+    width: 300px;
+    margin: 10px;
+    text-align: center;
+    font-size: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 10px;
+  }
  .menu {
     font-size: 20px;
     background-color: #D7C0AE;
@@ -24,9 +37,10 @@ body {
     left: 0;
     top: 0;
  }
- h1,h2{
+ h1{
     margin: 0;
     color: black;
+    font-size: 2em;
 }
  .featured-image {
     width: 225px;
@@ -41,93 +55,21 @@ body {
  }
  .Jam {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    border-radius: 5px;
     padding: 20px;
-    margin-left: 30px;
     background-color: #967E76 !important;
     background-size: 100%;
     border: 2px solid;
- }
- .Jam2{
-   background-color: brown;
- }
- .Jam3{
-   padding: 30px;
-   box-sizing: border-box;
- }
- .Jam4{
-    margin: 20px;
- }
- .Tas {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    border-radius: 5px;
-    padding: 20px;
-    margin-top: 20px;
-    margin-left: 30px;
-    background-color: #967E76;
-    background-size: 100%;
-    border: 2px solid;
- }
- .Tas2{
-   background-color: brown;
- }
- .Tas3{
-   padding: 30px;
-   box-sizing: border-box;
- }
- .Tas4{
-    margin: 20px;
- }
- .Sepatu {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    border-radius: 5px;
-    padding: 20px;
-    margin-top: 20px;
-    margin-left: 30px;
-    background-color: #967E76;
-    background-size: 100%;
-    border: 2px solid;
- }
- .Sepatu2{
-   background-color: brown;
- }
- .Sepatu3{
-   padding: 30px;
-   box-sizing: border-box;
- }
- .Sepatu4{
-    margin: 20px;
- }
- .tas{
-    text-align: center;
-    font-weight: bold;
-    background-color: #D7C0AE;
-    font-size: 20px;
-    border-radius: 5px;
- }
- .sepatu{
-    text-align: center;
-    font-weight: bold;
-    background-color: #D7C0AE;
-    font-size: 20px;
-    border-radius: 5px;
  }
  .jam{
     text-align: center;
     font-weight: bold;
     background-color: #D7C0AE;
-    font-size: 20px;
     border-radius: 5px;
+    font-size: 3em;
  }
 a{
      text-decoration: none;
      color: black;
- }
- a.active{
-    color: brown;
- }
- a:not(.active){
-    color: rgb(18, 32, 224);
  }
  .row {
     display: flex;
@@ -136,17 +78,7 @@ a{
 /*pseudo class*/
 .jam:hover{
     background-color: #B7C4CF;
-    font-size: 20px;
-    border-radius: 5px;
-}
-.tas:hover{
-    background-color: #B7C4CF;
-    font-size: 20px;
-    border-radius: 5px;
-}
-.sepatu:hover{
-    background-color: #B7C4CF;
-    font-size: 20px;
+    font-size: 3em;
     border-radius: 5px;
 }
  footer {

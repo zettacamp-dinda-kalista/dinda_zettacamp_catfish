@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/style/style.css">
+    <title>CSS Day 3</title>
+</head>
+<body>
+    <header>
+		<div class="menu">
+			<h1>Dinda Shop<span style="font-size: 16px; margin-left: 1000px; vertical-align: middle; "><a class="active" href="html/shopping_list.html">Shopping List</a></span></h1>
+		</div>
+ 	</header>
+     
+
+     <div class="container">
+        <div style="width: 50%;">
+            <p><a href="shopping_list.html"> &#8592; Shopping List</a></p>
+            <h2 style="color: black;">Add New Item</h2>
+        </div>
+        <div style="width: 50%; display: flex; justify-content: space-between;">
+            <h1 style="visibility: hidden;"></h1>
+            <button class="button"><a href="add_item.html">+ Submit</a></button>
+        </div>
+    </div>
+
+    
+    <div class="container">
+        <div style="width: 50%;">
+            <form action="#" id="form">
+                <div class="form-group form-title">
+                    <label for="title">Product Name</label>
+                    <input type="text" id="title" name="title" placeholder="Enter the product name....." required>
+                </div>
+                <div class="form-group form-title">
+                    <label for="title">Price</label>
+                    <input type="text" id="title" name="title" placeholder="Enter the product price....."  required>
+                </div>
+            </form>
+        </div>
+        <div class="upload" style="width: 50%;">
+            <button class="btn">+ Upload Product Image</button>
+            <input type="file" name="pictures"></input>
+        </div>
+    </div>
+
+    <h1 style="text-align: center; color: black;"> Card Preview </h1>
+    <div class="flex-container">
+        <div>
+            <article class="Jam">
+                <img src="../assets/img/tas3.png" class="featured-image" alt="jam"><hr>
+                <h2>Tas</h2>
+                <p>Rp350.000</p>
+            </article>
+        </div>
+        <div>
+            <article class="Jam">
+                <img src="../assets/img/tas7.jpg" class="featured-image" alt="jam"><hr>
+                <h2>Tas</h2>
+                <p>Rp350.000</p>
+            </article>
+        </div>
+        <div>
+            <article class="Jam">
+                <img src="../assets/img/tas6.jpg" class="featured-image" alt="jam"><hr>
+                <h2>Tas</h2>
+                <p>Rp350.000</p>
+            </article>
+        </div>
+    </div>
+
+    <footer>
+        <a class="about" href="about.html">About</a>
+        <a class="contact" href="contact.html">&nbsp;&nbsp;&nbsp; Contact</a>
+    </footer>
+</body>
+</html>

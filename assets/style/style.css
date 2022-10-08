@@ -117,6 +117,7 @@ a{
  /*View*/
  .view{
      font-size: 2em;
+     align-items: center;
  }
 
  /*Shopping List button*/

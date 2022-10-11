@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS_Day1</title>
+    <style>
+        input:out-of-range {
+            border:2px solid red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Buku</h1>
+    <div>
+        <label for="jenis">Jenis Buku</label><br>
+        <input id="jenis" type="text"><br>
+
+        <label for="type">Type Buku</label><br>
+        <input id="type" type="text"><br>
+
+        <label for="price">Harga</label><br>
+        <input id="price" type="number" ><br>
+
+        <label for="discount">Jumlah Diskon</label><br>
+        <input id="discount" type="number" onKeyPress="if(this.value.length==2) return false;">%<br>
+
+        <label for="pajak">Jumlah Pajak</label><br>
+        <input id="pajak" type="number" onKeyPress="if(this.value.length==2) return false;">%<br><br>
+
+        <button onclick="getPrice()">Get total</button><br><br>
+
+        <label for="jenis1">Jenis Buku</label><br>
+        <input id="jenis1" type="text"><br>
+
+        <label for="type1">Type Buku</label><br>
+        <input id="type1" type="text"><br>
+
+        <label for="total">Harga Setelah Diskon</label><br>
+        <input id="total_discount" type="number"><br>
+
+        <label for="total_pajak">Harga Setelah Pajak</label><br>
+        <input id="total_pajak" type="number">
+        
+    </div>
+
+    <script src="assets/script.js"></script>
+</body>
+</html>

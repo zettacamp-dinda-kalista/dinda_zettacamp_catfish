@@ -98,6 +98,15 @@ function listDuration() {
     for (let index = 0; index < indexLagu; index++) {
         console.log(music[index]);
 
+     
+    // for (let i = 0; i < indexLagu; i++) {
+    //     if(i === indexLagu-1) {
+    //     indexLagu -= music.length+1
+    //     i=0
+    //     }
+    //     console.log(music[i]);
+    //     }
+
     }
 }
 listDuration()

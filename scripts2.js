@@ -1,25 +1,32 @@
-function Books(buy, stock){
-    let price = 20000
-    console.log(`harga: ${price}`)
+// //map
+// const angka = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 
-    let discount = 20
-    console.log(`discount: ${discount} %`)
-    let discPrice = price * (discount/100)
+// // membuat array baru dari array angka untuk memeriksa apakah setiap elemennya bernilai habis dibagi 2 atau tidak
+// const mapedArray = angka.map(item => item * 2);
+// console.log(mapedArray); 
 
-    // harga setelah diskon 
-    price -= discPrice
-    console.log(`harga setelah di diskon: ${price}`)
+// // forEach
+// const angka = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 
-    let amount_price = 0
-     // menghitung index, ketika value masih terpenuhi maka akan mengambil nilai i++ atau i=i+1
-    for(i=0; i < buy; i++){
-        // ketika hasil i=i+1 sudah di tambah 
-        if(i+2>stock){
-            console.log("stock habis")
-            break
-        }
-        amount_price += price
-        console.log(`total harga: ${amount_price}, buku ke - ${i+1}`)
+// const mapedArray = angka.forEach(item => console.log(item));
+
+// console.log(mapedArray); 
+
+let Credit = [];
+
+let Terms;
+
+function payment(Price, Month){
+    for(i=0; i < Month; i++){
+        Terms = {};
+        let Payment = Price / Month;
+        Terms['Month'] = i+1;
+        Terms['Credit'] = Payment;
+        // console.log(Terms);
+        Credit.push(Terms);
     }
+// console.log(Terms);
+let[ , , ...e] = Credit
+console.log(e)
 }
-Books(6, 5)
+payment(10000, 5)

@@ -1,0 +1,25 @@
+{
+  "name": "dinda_zettacamp_catfish",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "devDependencies": {
+    "@types/node": "^18.11.0",
+    "ts-node": "^10.9.1",
+    "tslib": "^2.4.0",
+    "typescript": "^4.8.4"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zettacamp-dinda-kalista/dinda_zettacamp_catfish.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zettacamp-dinda-kalista/dinda_zettacamp_catfish/issues"
+  },
+  "homepage": "https://github.com/zettacamp-dinda-kalista/dinda_zettacamp_catfish#readme"
+}

@@ -1,6 +1,7 @@
 // Type String 
 
 let data = [1, 'data', '3', 'result'];
+
 let data2 = ['Bejo', 'has', '4', 'sport', 'car']
 
 type StringOrNumber = (number | string)[];
@@ -18,6 +19,7 @@ console.log(combinationInput);
 //Case 2
 let combinationData = combination(data2);
 console.log(combinationData);
+
 
 
 

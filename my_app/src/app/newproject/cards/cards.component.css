@@ -1,0 +1,29 @@
+.card{
+    width: 20%;
+    border: 1px solid black;
+    padding: 10px;
+    margin: auto;
+    background-color: white;
+}
+.separate1{
+   margin-left: auto;
+   margin-right: auto;
+   display: block;
+}
+.images{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+button{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+p{
+    text-align: center;
+    
+}

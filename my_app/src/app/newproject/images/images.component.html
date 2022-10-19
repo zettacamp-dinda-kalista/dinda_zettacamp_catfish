@@ -1,0 +1,9 @@
+<img src="../../../assets/images/kucing.jpg">
+
+<!-- sebelumnya melakukan passing data menggunakan variable $event -->
+<!-- <input type="text" class="form-control" (input)="onUpdateNameServer($event)"> -->
+<div class="images">
+    <input type="text" class="form-control" [(ngModel)]="serverName">
+    <button class="btn btn-primary" [disabled]="!allowNewServer" (click)="onServerCreate()">Add Server</button>
+    <p>{{serverCreationStat}}</p>
+</div>

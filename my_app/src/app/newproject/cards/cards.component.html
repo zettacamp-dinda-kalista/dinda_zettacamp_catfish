@@ -1,0 +1,21 @@
+<div class="card">
+  <div class="separate1">
+    <h3 style="text-align:center"> {{card.title}} </h3>
+    <div>
+      <img class="images" src="../../../assets/images/kucing.jpg">
+      <button class="btn btn-primary" [disabled]="!allowNewCards" (click)="onCreateCards()">Click </button>
+      <p> {{card.content}}</p>
+    </div>
+  </div>
+</div>
+<!-- <button class="btn btn-primary" [disabled]="!allowNewCards" (click)="onCreateCards()"> Add Cards </button>
+
+<p> {{cardsCreationStatus}}</p> -->
+
+<!-- <div class="card" [ngStyle]="{'background-color': title === 'hahhaha' ? 'blue' : 'red'}">
+    <div class="card-header">
+        <h1>{{ title }}
+            <span *ngIf="title === 'hahhaha'">&check;</span>
+        </h1>
+    </div>
+    <div class="card-content"><p> {{ cards.content }} </p></div> -->

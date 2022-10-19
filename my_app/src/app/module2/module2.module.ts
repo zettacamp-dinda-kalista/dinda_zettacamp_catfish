@@ -15,7 +15,7 @@ import { Module1Module } from '../module1/module1.module';
   ],
   imports: [
     CommonModule,
-    Module1Module
+ 
   ],
   exports:[
     Compenentt1Component,

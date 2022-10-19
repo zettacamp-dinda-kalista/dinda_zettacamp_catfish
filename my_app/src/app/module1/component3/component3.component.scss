@@ -1,0 +1,22 @@
+/*footer*/
+
+footer {
+    padding: 0.5em;
+    width: 99%;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position: absolute;
+    bottom: 0;
+    height: 30px;
+    background-color: purple;
+  }
+  
+  footer ul {
+    list-style: none;
+  }
+  
+  footer li {
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+  }

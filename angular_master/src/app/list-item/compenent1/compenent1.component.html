@@ -1,7 +1,18 @@
 <div class="container">
-  <div style="width:50%">
-    <input type="text" class="form-control" [(ngModel)]="Name">
-    <button class="btn btn-primary" [disabled]="!allowNewServer" (click)="onServerCreate()">Add Server</button>
-    <p>{{serverCreationStat}}</p>
+  <div class="add-form" style="width: 100%;">
+    <form (ngSubmit)="addName()">
+      <label>Nama : </label>
+      <input type="text" class="form1" name="input_name" [(ngModel)]="Name">
+      <br><br><br>
+      <label>Alamat : </label>
+      <input type="text" class="form" name="input_alamat" [(ngModel)]="Alamat">
+      <button class="btn btn-primary" type="submit">Submit</button>
+    </form>
+  </div>
+
+  <div class="wrapper">
+    <p *ngFor="let i of namePerson">Namaku adalah {{ i.name }} Alamatku di {{ i.Alamat }}</p>
   </div>
 </div>
+
+<span> view encapsulation 1 </span>

@@ -1,5 +1,7 @@
-.table{
-    border: 1px solid black;
-    width: 700px;
-    height: 200px;
+p{
+    color: white;
+}
+
+span{
+    color: blue;
 }

@@ -1,28 +1,35 @@
-import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter, Input, ViewEncapsulation } from '@angular/core';
 
 @Component({
   selector: 'app-compenent1',
   templateUrl: './compenent1.component.html',
-  styleUrls: ['./compenent1.component.css']
+  styleUrls: ['./compenent1.component.css'],
+  encapsulation: ViewEncapsulation.None
 })
 
 export class Compenent1Component implements OnInit {
-
-
-  allowNewServer: boolean = false;
-  serverCreationStat: string = '';
-  //event binding with data
-  Name: string = ' ';
+  Name: string = '';
+  Alamat: string = '';
+  
+  @Input() namePerson:any;
+  @Output() nameChild: EventEmitter<any>;
 
   constructor() { 
-    setTimeout(()=>{this.allowNewServer = true;}, 2000);
-  }
-  onServerCreate(){
-      this.serverCreationStat = this.Name;
+    this.nameChild = new EventEmitter();
   }
 
   ngOnInit(): void {
   }
+  addName(){
+    let newObject = {
+      name: this.Name,
+      Alamat: this.Alamat
+    };
+    // console.log(object)
+  
+    this.nameChild.emit(newObject);
+  }
+
 
 }
 

@@ -1,9 +1,6 @@
-.container{
-    display: flex;
+p{
+    color:green;
 }
-.list{
-    width: 50%;
-}
-.form{
-    width: 50;
+span{
+    color: red;
 }

@@ -1,0 +1,43 @@
+.container{
+    display: flex;
+}
+.add-form{
+    margin: 2em 3em;
+    padding: 1.0em;
+    border: 3px dotted purple;
+    width: 100%;
+}
+.wrapper {
+    margin: 2em 3em;
+    padding: 1.0em;
+    border: 3px dotted purple;
+    width: 50%;
+}
+th, td{
+    margin-left: 20px;
+}
+
+.form{
+    width: 90%;
+    margin-left: 60px;
+}
+.form1{
+    margin-left: 60px;
+    width: 90%;
+}
+button{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: 30px;
+    width: 20%;
+    height: 40px;
+    background-color: rgb(166, 88, 235);
+}
+p{
+    color:black;
+}
+
+span{
+    color: green;
+}

@@ -1,0 +1,7 @@
+<div class="container">
+  <div style="width:50%">
+    <input type="text" class="form-control" [(ngModel)]="Name">
+    <button class="btn btn-primary" [disabled]="!allowNewServer" (click)="onServerCreate()">Add Server</button>
+    <p>{{serverCreationStat}}</p>
+  </div>
+</div>

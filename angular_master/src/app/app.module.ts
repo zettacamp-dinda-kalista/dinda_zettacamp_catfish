@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeroModule  } from './hero/hero.module';
+import { ListItemModule } from './list-item/list-item.module';
 
 @NgModule({
   declarations: [
@@ -12,7 +13,8 @@ import { HeroModule  } from './hero/hero.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HeroModule
+    HeroModule,
+    ListItemModule
   ],
   providers: [],
   bootstrap: [AppComponent]

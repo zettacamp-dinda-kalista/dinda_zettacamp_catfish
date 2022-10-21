@@ -6,5 +6,22 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'angular_master';
+  [x: string]: any;
+  serverElements = [{type: 'server', name: 'Somethinc', content: 'Skincare'}];
+
+  onServerAdded(serverData: {serverName: string, serverContent: string}) {
+    this.serverElements.push({
+      type: 'server',
+      name: serverData.serverName,
+      content: serverData.serverContent
+    });
+  }
+
+  onChangeFirst() {
+    this.serverElements[0].name = 'Pepsodent!';
+  }
+
+  onDestroyFirst(){
+    this.serverElements.splice(0, 1);
+  }
 }

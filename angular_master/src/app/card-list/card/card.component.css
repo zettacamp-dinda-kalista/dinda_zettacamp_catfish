@@ -1,6 +1,16 @@
-.row {
-    border: 1px solid #ccc;
-    margin: 10px 0;
-    padding: 10px 0;
-  }
-  
+.card-body{
+  background-color: plum;
+}
+
+button{
+  margin-left: 100px;
+  background-color: plum;
+}
+
+button:hover{
+  background-color: bisque;
+}
+
+.card-text{
+  display: flex;
+}

@@ -1,24 +1,14 @@
 import { Injectable } from '@angular/core';
-
-import { CounterService } from './counter.service';
+import { BehaviorSubject } from 'rxjs';
 
 @Injectable()
 export class UserService {
-  activeUsers = ['Max', 'Anna'];
-  inactiveUsers = ['Chris', 'Manu'];
 
-  constructor(private counterService: CounterService) {}
+  SharingData = new BehaviorSubject('default');
+  constructor() { }
+   changeDataSubject(users: any) {
+     this.SharingData.next(users.value);
+   }
 
-  setToActive(id: number) {
-    this.activeUsers.push(this.inactiveUsers[id]);
-    this.inactiveUsers.splice(id, 1);
-    this.counterService.incrementInActiveToActive();
-  }
-
-  setToInactive(id: number) {
-    this.inactiveUsers.push(this.activeUsers[id]);
-    this.activeUsers.splice(id, 1);
-    this.counterService.incrementActiveToInactive();
-  }
 }
 

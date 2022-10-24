@@ -1,6 +1,8 @@
-<h3>Active Users</h3>
-<ul class="list-group">
-  <li class="list-group-item" *ngFor="let user of users; let i = index"> {{ user }} | <a href="#" (click)="onSetToInactive(i)">Set to Inactive</a>
-  </li>
-</ul>
-
+<div style="background-color: aliceblue;" class="card">
+  <div class="card-body">
+      <h3 class="card-title">Nama</h3>
+      <input name="comp1" #comp1 type="text" />
+      <button (click)="onSubmit(comp1)">Submit</button>
+      <p class="card-text">{{Component1Data}}</p>
+  </div>
+</div>

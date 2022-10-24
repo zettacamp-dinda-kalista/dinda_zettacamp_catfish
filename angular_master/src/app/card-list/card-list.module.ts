@@ -3,8 +3,7 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { CardComponent } from './card/card.component';
 import { CardListComponent } from './card-list.component';
-import { NewCardComponent } from './new-card/new-card.component';
-import { CounterService } from './counter.service';
+import { UserService } from './users.service';
 
 
 
@@ -12,7 +11,6 @@ import { CounterService } from './counter.service';
   declarations: [
     CardComponent,
     CardListComponent,
-    NewCardComponent
   ],
   imports: [
     CommonModule,
@@ -20,8 +18,8 @@ import { CounterService } from './counter.service';
   ], 
   exports: [
     CardComponent,
-    CardListComponent
+    CardListComponent, 
   ],
-  providers: [CounterService],
+  providers: [UserService],
 })
 export class CardListModule { }

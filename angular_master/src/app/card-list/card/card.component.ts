@@ -7,16 +7,16 @@ import { UserService } from '../users.service';
   styleUrls: ['./card.component.css']
 })
 export class CardComponent implements OnInit{
-  users!: string[];
-
-  constructor(private userService: UserService) {}
-
-  ngOnInit() {
-    this.users = this.userService.activeUsers;
+  Component1Data: any = '';
+  constructor(private DataSharing: UserService) {
+    DataSharing.SharingData.subscribe((res: any) => {
+      this.Component1Data = res;
+    })
   }
-
-  onSetToInactive(id: number) {
-    this.userService.setToInactive(id);
+  ngOnInit(): void {
+  }
+  onSubmit(data: any) {
+    this.DataSharing.changeDataSubject(data);
   }
 
 }

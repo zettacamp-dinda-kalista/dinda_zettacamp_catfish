@@ -1,4 +1,16 @@
 .container {
-    margin-top: 30px;
-  }
-  
+  margin-top: 30px;
+}
+
+.card-body {
+  background-color: rgb(212, 86, 212);
+}
+
+button {
+  margin-left: 100px;
+  background-color: plum;
+}
+
+button:hover {
+  background-color: bisque;
+}

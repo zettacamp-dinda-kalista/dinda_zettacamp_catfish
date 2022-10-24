@@ -1,9 +1,8 @@
-<div class="container">
-    <div class="row">
-      <div class="col-xs-12 col-md-8 col-md-offset-2">
-        <app-card></app-card>
-        <app-new-card></app-new-card>
-      </div>
-    </div>
+<div style="background-color: aliceblue;" class="card">
+  <div class="card-body">
+      <h3 class="card-title">Alamat</h3>
+      <input name="comp3" #comp3 type="text" />
+      <button (click)="onSubmit(comp3)">Submit</button>
+      <p class="card-text">{{Component3Data}}</p>
   </div>
-  
+</div>

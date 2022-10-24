@@ -10,13 +10,15 @@ import { UserService } from './users.service';
 })
 export class CardListComponent{
   CardList: any = '';
+    // angular tidak boleh disimpan di constructor
   constructor(private DataSharing: UserService) {
-    DataSharing.SharingData.subscribe((res: any) => {
+  
+  }
+  ngOnInit(): void {
+    this.DataSharing.SharingData.subscribe((res: any) => {
       debugger
       this.CardList = res;
     })
-  }
-  ngOnInit(): void {
   }
   onSubmit(data: any) {
     this.DataSharing.changeDataSubject(data);

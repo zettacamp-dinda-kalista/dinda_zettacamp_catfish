@@ -1,16 +1,22 @@
+.card{
+  display: flex;
+}
 .card-body{
-  background-color: plum;
+  width: 50%;
 }
 
+.card-content{
+  width: 50%;
+  text-align: center;
+  border: 1px solid black;
+  width: 40%;
+  height: 70px;
+}
 button{
-  margin-left: 100px;
+  margin-left: 50px;
   background-color: plum;
 }
 
 button:hover{
   background-color: bisque;
-}
-
-.card-text{
-  display: flex;
 }

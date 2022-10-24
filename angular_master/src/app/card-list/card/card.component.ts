@@ -7,10 +7,10 @@ import { UserService } from '../users.service';
   styleUrls: ['./card.component.css']
 })
 export class CardComponent implements OnInit{
-  Component1Data: any = '';
+  Card: any = '';
   constructor(private DataSharing: UserService) {
     DataSharing.SharingData.subscribe((res: any) => {
-      this.Component1Data = res;
+      this.Card = res;
     })
   }
   ngOnInit(): void {

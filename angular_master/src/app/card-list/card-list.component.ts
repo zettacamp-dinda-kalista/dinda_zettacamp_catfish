@@ -9,11 +9,11 @@ import { UserService } from './users.service';
   providers: [UserService]
 })
 export class CardListComponent{
-  Component3Data: any = '';
+  CardList: any = '';
   constructor(private DataSharing: UserService) {
     DataSharing.SharingData.subscribe((res: any) => {
       debugger
-      this.Component3Data = res;
+      this.CardList = res;
     })
   }
   ngOnInit(): void {

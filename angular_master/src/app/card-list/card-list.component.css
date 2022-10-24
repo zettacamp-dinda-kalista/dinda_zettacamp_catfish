@@ -1,13 +1,23 @@
-.container {
-  margin-top: 30px;
+.card{
+  display: flex;
 }
 
-.card-body {
-  background-color: rgb(212, 86, 212);
+.card{
+  display: flex;
+}
+.card-body{
+  width: 50%;
 }
 
-button {
-  margin-left: 100px;
+.card-content{
+  width: 50%;
+  text-align: center;
+  border: 1px solid black;
+  width: 40%;
+  height: 70px;
+}
+button{
+  margin-left: 50px;
   background-color: plum;
 }
 

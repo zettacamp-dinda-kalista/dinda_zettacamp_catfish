@@ -1,5 +1,8 @@
-<h3>Inactive Users</h3>
-<ul class="list-group">
-  <li class="list-group-item" *ngFor="let user of users; let i = index"> {{ user }} | <a href="#" (click)="onSetToActive(i)">Set to Active</a>
-  </li>
-</ul>
+<div class="card">
+  <h3>Barang yang di Cancel</h3>
+  <ul class="list-group" *ngFor="let user of users; let i = index">
+    <li class="list-group-item"> {{ user }}
+    </li>
+    <button type="button" (click)="onSetToActive(i)">Submit</button>
+  </ul>
+</div>

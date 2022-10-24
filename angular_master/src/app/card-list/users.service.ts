@@ -5,7 +5,9 @@ import { BehaviorSubject } from 'rxjs';
 export class UserService {
 
   SharingData = new BehaviorSubject('default');
+  
   constructor() { }
+
    changeDataSubject(users: any) {
      this.SharingData.next(users.value);
    }

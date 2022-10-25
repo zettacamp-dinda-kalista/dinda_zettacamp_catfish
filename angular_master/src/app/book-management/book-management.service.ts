@@ -18,8 +18,8 @@ export class BookManagementService {
   }
 
   dummyInitList() {
-    this.fetchUserJson().subscribe(resp => {
-      let usersData = resp.bookList;
+    this.fetchUserJson().subscribe(books => {
+      let usersData = books.bookList;
       this.setAllUsersLists(usersData);
     })
   }

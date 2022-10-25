@@ -8,6 +8,7 @@ import { Data } from '../model/user.model';
   styleUrls: ['./book-detail.component.css']
 })
 export class BookDetailComponent implements OnInit {
+  
   constructor(private data: BookManagementService) { }
 
   ngOnInit(): void {

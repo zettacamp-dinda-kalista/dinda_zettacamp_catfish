@@ -6,3 +6,13 @@ mat-list{
     margin-right: auto;
     margin-top: 200px;
 }
+mat-card-title{
+    text-align: center;
+    font-size: 20px;
+}
+
+mat-card{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 300px;
+}

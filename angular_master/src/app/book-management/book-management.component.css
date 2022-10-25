@@ -1,0 +1,12 @@
+
+mat-grid-tile{
+  background-color: rgb(255, 163, 227);
+  width: 100%;
+  height: 100%;
+  
+}
+app-book-detail {
+  background-color: rgb(162, 216, 255);
+  width: 100%;
+  height: 100%;
+}

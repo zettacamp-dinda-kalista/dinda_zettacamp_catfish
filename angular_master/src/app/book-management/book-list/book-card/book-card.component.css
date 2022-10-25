@@ -1,0 +1,18 @@
+mat-selection-list{
+    background-color: rgb(213, 168, 255);
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: 20px;
+}
+
+mat-card{
+    width: 100%;
+    background-color: rgb(196, 2, 122);
+    margin: 10px;
+}
+
+mat-card-title{
+    color: white;
+}

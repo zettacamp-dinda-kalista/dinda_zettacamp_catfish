@@ -1,0 +1,32 @@
+{
+  "bookList": [
+    {
+      "name": "Susah Sinyal",
+      "author": "Dinda",
+      "publisher": "Kalista",
+      "date": "20 agustus 2022",
+      "publishdate": "25 agustus 2022"
+    },
+    {
+      "name": "Bahasa Inggirs",
+      "author": "Dinda Kalista",
+      "publisher": "Dinda",
+      "date": "12 april 2022",
+      "publishdate": "30 april 2022"
+    },
+    {
+      "name": "Kimia Dasar",
+      "author": "Dinda Kalista",
+      "publisher": "Maharani",
+      "date": "1 januari 2022",
+      "publishdate": "12 januari 2022"
+    },
+    {
+      "name": "Matematika",
+      "author": "Dinda",
+      "publisher": "Nina",
+      "date": "21 agustus 2022",
+      "publishdate": "30 agustus 2022"
+    }
+  ]
+}

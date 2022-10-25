@@ -11,6 +11,7 @@ import { UserService } from './users.service';
 export class CardListComponent{
   CardList: any = '';
     // angular tidak boleh disimpan di constructor
+    // dependancy injector (private DataSharing: UserService)
   constructor(private DataSharing: UserService) {
   
   }

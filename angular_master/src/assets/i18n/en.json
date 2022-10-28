@@ -1,0 +1,18 @@
+{
+    "userForm": {
+      "id": "ID Number",
+      "name": "Name",
+      "age": "Age",
+      "genders": "Gender",
+      "email": "Email",
+      "position": "Position",
+      "status": "Marital Status",
+      "address": "Address",
+      "zip_code": "Zip Code",
+      "city": "City",
+      "country": "Country"
+    },
+    "actions": {
+      "submit": "Submit"
+    }
+  }

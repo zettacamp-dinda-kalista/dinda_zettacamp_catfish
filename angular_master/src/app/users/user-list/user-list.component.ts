@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { FormControl, FormGroup, FormArray, FormBuilder, Validators } from '@angular/forms';
 import { UsersService} from '../users.service';
 import { ActivatedRoute, Router } from '@angular/router';
 
@@ -67,7 +67,6 @@ export class UserListComponent implements OnInit {
       let updateValue = this.signupForm.value;
       this.userService.updateUser(updateId, updateValue);
     } else {
-      let data = this.signupForm.value;
       this.userService.addNewUser(this.signupForm.value);
     }
     this.router.navigate(['/user-detail']);
@@ -79,3 +78,6 @@ export class UserListComponent implements OnInit {
   
 
 }
+
+
+

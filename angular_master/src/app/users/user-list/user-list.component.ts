@@ -60,8 +60,16 @@ export class UserListComponent implements OnInit {
     });
   }
 
+  // update data
   onSubmit(){
-    this.userService.addNewUser(this.signupForm.value);
+    if (this.id){
+      let updateId = this.id;
+      let updateValue = this.signupForm.value;
+      this.userService.updateUser(updateId, updateValue);
+    } else {
+      let data = this.signupForm.value;
+      this.userService.addNewUser(this.signupForm.value);
+    }
     this.router.navigate(['/user-detail']);
     // console.log(this.signupForm);
   }

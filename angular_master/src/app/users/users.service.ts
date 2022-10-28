@@ -42,7 +42,17 @@ export class UsersService {
 
   addNewUser(userData: any){
     this.newUser.push(userData);
+    this.userList.next(this.newUser)
     // console.log(userData);
+  }
+  
+  //update user
+
+  updateUser(currentId: any, newValue: any){
+    let index = parseInt(currentId)-1;
+    if(this.newUser[index]._id == currentId){
+      this.newUser[index] = newValue
+    }
   }
 }
 

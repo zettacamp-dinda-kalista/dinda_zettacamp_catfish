@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { UsersService } from '../users.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-user-card',
@@ -7,9 +9,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UserCardComponent implements OnInit {
 
-  constructor() { }
+  users: any;
+
+  constructor(private userService: UsersService, private router: Router) { }
 
   ngOnInit(): void {
+    this.userService.userList$.subscribe(data => {
+      this.users = data;
+
+      console.log(this.users);
+      
+    })
+  }
+  editUser(editData: any){
+    this.router.navigate(['/form-edit', editData._id]);
   }
 
 }

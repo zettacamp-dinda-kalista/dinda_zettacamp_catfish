@@ -1,17 +1,20 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { BehaviorSubject } from 'rxjs';
-import { User } from './users.model'
+import { User } from './users.model';
 
 @Injectable({
   providedIn: 'root'
 })
 export class UsersService {
+  newUser: any;
+
   userList: BehaviorSubject<User[]> = new BehaviorSubject<User[]>([]);
   userList$ = this.userList.asObservable();
 
   selectedUser: BehaviorSubject<User | null> = new BehaviorSubject<User | null>(null);
   selectedUser$ = this.selectedUser.asObservable();
+  userData$: any;
 
   constructor(private httpClient: HttpClient) { 
     this.dummyInitList();
@@ -19,8 +22,9 @@ export class UsersService {
 
   dummyInitList() {
     this.fetchUserJson().subscribe(users => {
-      let usersData = users.Users;
-      this.setAllUsersLists(usersData);
+      this.newUser = users.Users;
+      // console.log(this.newUser);
+      this.setAllUsersLists(this.newUser);
     })
   }
 
@@ -34,6 +38,11 @@ export class UsersService {
 
   setSelectedData(data1: User) {
     this.selectedUser.next(data1);
+  }
+
+  addNewUser(userData: any){
+    this.newUser.push(userData);
+    // console.log(userData);
   }
 }
 

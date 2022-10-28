@@ -40,22 +40,20 @@
             <mat-radio-button value="Male">Male</mat-radio-button>
           </mat-radio-group>
   
-          <!-- <label> Gender</label>
-          <div class="radio" *ngFor="let gender of genders">
-            <input type="radio" formControlName="genders" [value]="gender">{{ gender }}
-          </div><br> -->
-  
-          <div formGroupName="address">
+          <div formArrayName="address">
             <h2>Address</h2>
-  
+            <button type="button" (click)="onAddAddress()" mat-raised-button color="accent"> Add Address </button>
+            <div *ngFor="let creds of controls; let i = index">
+
+              <div [formGroupName]="i">
             <mat-form-field class="example-full-width" appearance="fill">
               <mat-label for="address">Address: </mat-label>
               <input matInput id="address" type="text" formControlName="address">
             </mat-form-field><br>
   
             <mat-form-field class="example-full-width" appearance="fill">
-              <mat-label for="zip_code">Zip Code: </mat-label>
-              <input matInput id="zip_code" type="text" formControlName="zip_code">
+              <mat-label for="zip">Zip Code: </mat-label>
+              <input matInput id="zip" type="text" formControlName="zip">
             </mat-form-field><br>
   
             <mat-form-field class="example-full-width" appearance="fill">
@@ -68,11 +66,11 @@
               <input matInput id="country" type="text" formControlName="country">
             </mat-form-field><br>
           </div>
+          </div>
+        </div>
   
-          <button mat-raised-button type="submit">Submit</button>
+          <button mat-raised-button color="primary" type="submit">Submit</button>
         </form>
       </div>
     </div>
   </div>
-  
-

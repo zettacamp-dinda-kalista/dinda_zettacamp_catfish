@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { FormControl, FormGroup, FormArray, FormBuilder, Validators } from '@angular/forms';
 import { UsersService} from '../users.service';
 import { ActivatedRoute, Router } from '@angular/router';
 
@@ -18,7 +18,7 @@ export class UserListComponent implements OnInit {
   signupForm!: FormGroup;
   // name = new FormControl('');
 
-  constructor(private userService: UsersService, private router: Router, private rootaktif: ActivatedRoute) { }
+  constructor(private userService: UsersService, private router: Router, private rootaktif: ActivatedRoute, private fb: FormBuilder) { }
 
 
   ngOnInit() {
@@ -29,23 +29,15 @@ export class UserListComponent implements OnInit {
       this.id = null;
     }
     this.signupForm = new FormGroup({
-      '_id': new FormControl(null),
-      'name': new FormControl(null),
-      'age': new FormControl(null),
-      'email': new FormControl(null),
-      'position': new FormControl(null),
-      'marital_status': new FormControl(null),
+      '_id': new FormControl(null, Validators.required ),
+      'name': new FormControl(null, Validators.required),
+      'age': new FormControl(null, Validators.required),
+      'email': new FormControl(null, Validators.required),
+      'position': new FormControl(null, Validators.required),
+      'marital_status': new FormControl(null, Validators.required),
       'genders': new FormControl(null),
-      'address': new FormGroup({
-        'address': new FormControl(null),
-        'zip_code': new FormControl(null),
-        'city': new FormControl(null),
-        'country': new FormControl(null)
-      })
+      'address': new FormArray([])
     });
-    // this.id = this.rootaktif.snapshot.params['id'];
-    // console.log(this.id);
-    // this.signupForm.patchValue()
     this.getUserDatas();
   }
 
@@ -60,7 +52,7 @@ export class UserListComponent implements OnInit {
     });
   }
 
-  // update data
+  // get value untuk nampilin di form untuk ngedit data
   onSubmit(){
     if (this.id){
       let updateId = this.id;
@@ -74,8 +66,70 @@ export class UserListComponent implements OnInit {
     // console.log(this.signupForm);
   }
   
-  // get value untuk nampilin di form untuk ngedit data
 
+  onAddAddress() {
+    let creds = this.signupForm.controls['address'] as FormArray;
+    creds.push(new FormGroup({
+      address: new FormControl(null, Validators.required),
+      zip_code: new FormControl(null, Validators.required),
+      city: new FormControl(null, Validators.required),
+      country: new FormControl(null, Validators.required)
+    }));
+
+  }
+  
+  get controls() {
+    return (this.signupForm.get('address') as FormArray).controls;
+  }
   
 
 }
+
+
+//   ngOnInit() {
+//     if(this.rootaktif.snapshot.params['id']) {
+//       this.id = this.rootaktif.snapshot.params['id'];
+//       // console.log(this.id);
+//     } else{
+//       this.id = null;
+//     }
+//     this.signupForm = this.fb.group({
+    //   '_id': '',
+    //   'name': '',
+    //   'age': '',
+    //   'email': '',
+    //   'position': '',
+    //   'marital_status': '',
+    //   'genders': '',
+    //   'address': this.fb.array([
+    //     {'address': ''},
+    //     {'zip_code': ''},
+    //     {'city': ''},
+    //     {'country': ''},
+    // ]),
+//     });
+//     // this.id = this.rootaktif.snapshot.params['id'];
+//     // console.log(this.id);
+//     // this.signupForm.patchValue()
+//     this.getUserDatas();
+//   }
+//
+
+//   get address() : FormArray {
+//     return this.signupForm.get("address") as FormArray
+//   }
+
+//   newAddress(): FormGroup {
+//     return this.fb.group({
+//       address: '',
+//       zip_code: '',
+//       city: '',
+//       country: ''
+//     })
+//   }
+ 
+//   addAddress() {
+//     this.address.push(this.newAddress());
+//  }
+  
+// }

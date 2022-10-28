@@ -44,7 +44,6 @@
             <h2>Address</h2>
             <button type="button" (click)="onAddAddress()" mat-raised-button color="accent"> Add Address </button>
             <div *ngFor="let creds of controls; let i = index">
-
               <div [formGroupName]="i">
             <mat-form-field class="example-full-width" appearance="fill">
               <mat-label for="address">Address: </mat-label>
@@ -53,7 +52,7 @@
   
             <mat-form-field class="example-full-width" appearance="fill">
               <mat-label for="zip">Zip Code: </mat-label>
-              <input matInput id="zip" type="text" formControlName="zip">
+              <input matInput id="zip_code" type="text" formControlName="zip_code">
             </mat-form-field><br>
   
             <mat-form-field class="example-full-width" appearance="fill">

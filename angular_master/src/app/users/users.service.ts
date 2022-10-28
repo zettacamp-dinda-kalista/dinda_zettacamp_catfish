@@ -50,8 +50,14 @@ export class UsersService {
 
   updateUser(currentId: any, newValue: any){
     let index = parseInt(currentId)-1;
-    if(this.newUser[index]._id == currentId){
+    console.log(this.newUser);
+    console.log(index);
+    
+    
+    if(this.newUser[index]?._id == currentId){
       this.newUser[index] = newValue
+    } else {
+      this.newUser.push(newValue);
     }
   }
 }

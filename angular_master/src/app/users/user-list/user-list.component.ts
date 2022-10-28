@@ -38,6 +38,7 @@ export class UserListComponent implements OnInit {
       'genders': new FormControl(null),
       'address': new FormArray([])
     });
+    this.onAddAddress();
     this.getUserDatas();
   }
 
@@ -76,8 +77,7 @@ export class UserListComponent implements OnInit {
       country: new FormControl(null, Validators.required)
     }));
 
-  }
-  
+  } 
   get controls() {
     return (this.signupForm.get('address') as FormArray).controls;
   }

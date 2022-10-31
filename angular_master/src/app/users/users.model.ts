@@ -1,8 +1,8 @@
 export interface User {
   _id: number,
   name: string,
-  age: string,
-  gender: number,
+  age: number,
+  gender: string,
   email: string,
   position: string,
   marital_status: string,

@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, FormArray, FormBuilder, Validators } from '@angular/forms';
 import { UsersService} from '../users.service';
 import { ActivatedRoute, Router } from '@angular/router';
-import { first, Observable } from 'rxjs';
+import { first } from 'rxjs';
 import Swal  from 'sweetalert2';
 
 

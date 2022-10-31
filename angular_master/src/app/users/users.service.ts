@@ -59,6 +59,10 @@ export class UsersService {
     } else {
       this.newUser.push(newValue);
     }
+    
   }
+  resetSelectedData() {
+    this.selectedUser.next(null);
+  }  
 }
 

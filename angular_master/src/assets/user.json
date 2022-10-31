@@ -8,12 +8,12 @@
       "email": "dinda@gmail.com",
       "position": "qa",
       "marital_status": "Married",
-      "address": {
+      "address": [{
           "address": "Jalan Madesabara",
           "zip_code": 20,
           "city": "Raha",
           "country": "Raha"
-      }
+      }]
 
     },
     {
@@ -24,12 +24,12 @@
       "email": "dinda@gmail.com",
       "position": "qa",
       "marital_status": "Married",
-      "address": {
+      "address": [{
           "address": "Jalan Madesabara",
           "zip_code": 20,
           "city": "Raha",
           "country": "Raha"
-      }
+      }]
 
     }
 

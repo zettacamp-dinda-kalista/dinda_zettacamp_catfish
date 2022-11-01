@@ -54,6 +54,8 @@ export class UserListComponent implements OnInit {
       this.onAddAddress();
     }
 
+    // Validation and Value Changes
+
     this.signupForm.get('name')?.valueChanges.subscribe((value : any) => {
       const regex = /[^a-z|\s]/i;
       console.log(value);
@@ -137,6 +139,7 @@ export class UserListComponent implements OnInit {
       if (this.signupForm.valid) {
           this.userService.updateUser(updateId, updateData)
           console.log('berhasil edit');
+          // Sweet Alert
           Swal.fire(
               'success to edit ' + this.signupForm.value.name,
               'Click to close',

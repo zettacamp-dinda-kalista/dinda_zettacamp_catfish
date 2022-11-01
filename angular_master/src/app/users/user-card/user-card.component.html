@@ -1,5 +1,5 @@
 <form class="example-form">
-  <input type="text" placeholder="Search for a street" [(ngModel)]="filters" [ngModelOptions]="{standalone: true}">
+  <input type="text" placeholder="Search Name" [(ngModel)]="filters" [ngModelOptions]="{standalone: true}">
 </form>
 
 <mat-card *ngFor="let userCard of Users | searchFilter: filters">

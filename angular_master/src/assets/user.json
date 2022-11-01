@@ -2,7 +2,7 @@
     "Users" : [
     {
       "_id": 1,
-      "name": "Dinda Kalista Sarimu",
+      "name": "Dindà Kalista Sarimù",
       "age": 21,
       "genders": "Female",
       "email": "dinda@gmail.com",
@@ -18,7 +18,23 @@
     },
     {
       "_id": 2,
-      "name": "Marina",
+      "name": "Marina Émil",
+      "age": 21,
+      "genders": "Male",
+      "email": "dinda@gmail.com",
+      "position": "qa",
+      "marital_status": "Married",
+      "address": [{
+          "address": "Jalan Madesabara",
+          "zip_code": 20,
+          "city": "Raha",
+          "country": "Raha"
+      }]
+
+    },
+    {
+      "_id": 3,
+      "name": "Mr. Arya Purnama",
       "age": 21,
       "genders": "Male",
       "email": "dinda@gmail.com",

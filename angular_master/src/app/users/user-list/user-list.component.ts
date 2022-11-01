@@ -19,10 +19,11 @@ export class UserListComponent implements OnInit {
   //variabel array
   data: any;
 
+  myAddr!: FormGroup;
   signupForm!: FormGroup;
   // name = new FormControl('');
 
-  constructor(private userService: UsersService, private router: Router, private rootaktif: ActivatedRoute, private fb: FormBuilder) { }
+  constructor(private userService: UsersService, private router: Router, private rootaktif: ActivatedRoute) { }
 
 
   ngOnInit(): void{
@@ -30,8 +31,8 @@ export class UserListComponent implements OnInit {
 
     const id = this.rootaktif.snapshot.paramMap.get('id');
     this.isEdit = id != null;
-    // console.log(this.isEdit);
-    // console.log(id)
+    console.log(this.isEdit);
+    console.log(id)
     if (this.isEdit) {
       this.subcription = this.userService.userList$
         .pipe(first((items) => items.length !== 0))
@@ -75,6 +76,14 @@ export class UserListComponent implements OnInit {
     } else{
       this.id = null;
     }
+
+    this.myAddr = new FormGroup({
+      add: new FormControl(null, Validators.required),
+      zip_code: new FormControl(null, Validators.required),
+      city: new FormControl(null, Validators.required),
+      country: new FormControl(null, Validators.required)
+    })
+    
     this.signupForm = new FormGroup({
       '_id': new FormControl(null, Validators.required ),
       'name': new FormControl(null, [Validators.required,]),
@@ -105,12 +114,7 @@ export class UserListComponent implements OnInit {
   
   onAddAddress() {
     // let creds = this.signupForm.controls['address'] as FormArray;
-    this.addr.push(new FormGroup({
-      address: new FormControl(null, Validators.required),
-      zip_code: new FormControl(null, Validators.required),
-      city: new FormControl(null, Validators.required),
-      country: new FormControl(null, Validators.required)
-    }));
+    this.addr.push(this.myAddr);
     // console.log(this.addr);
   } 
 

@@ -48,13 +48,16 @@ import { MatSortModule } from '@angular/material/sort';
 import { MatTableModule } from '@angular/material/table';
 import { UserCardComponent } from './user-card/user-card.component';
 
+import { SearchFilterPipe } from './search-filter.pipe';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
   declarations: [
     UserListComponent,
     UserDetailComponent,
-    UserCardComponent
+    UserCardComponent,
+    SearchFilterPipe
   ],
   imports: [
     CommonModule,
@@ -95,6 +98,7 @@ import { UserCardComponent } from './user-card/user-card.component';
     MatPaginatorModule,
     MatSortModule,
     MatTableModule,
+    FormsModule
   ],
   exports: [
     UserListComponent,

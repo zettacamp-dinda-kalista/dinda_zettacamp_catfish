@@ -60,7 +60,7 @@
           <button type="button" mat-raised-button color="accent"> Add Address </button>
         </a><br>
 
-        <div formArrayName="address" *ngFor="let creds of controls.controls; let i = index"  >
+        <div formArrayName="address" *ngFor="let creds of controls.controls; let i = index">
           <form [formGroupName]="i">
             <mat-form-field class="example-full-width" appearance="fill">
               <mat-label for="address">Address: </mat-label>
@@ -68,29 +68,28 @@
               <mat-error *ngIf="this.addr.at(i).get('address')?.invalid"> This address is required </mat-error>
             </mat-form-field><br>
 
-            <mat-form-field class="example-full-width" appearance="fill">
+            <!-- <mat-form-field class="example-full-width" appearance="fill">
               <mat-label for="zip_code">Zip Code: </mat-label>
               <input matInput id="zip_code" type="number" formControlName="zip_code">
               <mat-error *ngIf="this.addr.at(i).get('zip_code')?.invalid"> This zip code is required </mat-error>
-            </mat-form-field><br>
+            </mat-form-field><br> -->
 
-            <mat-form-field class="example-full-width" appearance="fill">
+            <!-- <mat-form-field class="example-full-width" appearance="fill">
               <mat-label for="city">City: </mat-label>
               <input matInput id="city" type="text" formControlName="city">
               <mat-error *ngIf="this.addr.at(i).get('city')?.invalid"> This city is required </mat-error>
-            </mat-form-field><br>
+            </mat-form-field><br> -->
 
-            <mat-form-field class="example-full-width" appearance="fill">
+            <!-- <mat-form-field class="example-full-width" appearance="fill">
               <mat-label for="country">Country: </mat-label>
               <input matInput id="country" type="text" formControlName="country">
               <mat-error *ngIf="this.addr.at(i).get('country')?.invalid"> This country is required </mat-error>
-            </mat-form-field><br>
+            </mat-form-field><br> -->
 
-            <button mat-raised-button color="warn" (click)="removeAddress(i)" *ngIf="controls.length > 1">
+            <button mat-raised-button type="button" color="warn" (click)="removeAddress(i)" *ngIf="controls.length > 1">
               Remove
             </button>
           </form>
-          
         </div>
 
         <button mat-raised-button color="primary" type="submit">Submit</button>

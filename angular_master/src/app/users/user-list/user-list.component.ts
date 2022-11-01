@@ -4,6 +4,7 @@ import { UsersService} from '../users.service';
 import { ActivatedRoute, Router } from '@angular/router';
 import { first } from 'rxjs';
 import Swal  from 'sweetalert2';
+import {TranslateService} from '@ngx-translate/core';
 
 
 @Component({
@@ -20,9 +21,11 @@ export class UserListComponent implements OnInit {
   data: any;
 
   signupForm!: FormGroup;
-  // name = new FormControl('');
 
-  constructor(private userService: UsersService, private router: Router, private rootaktif: ActivatedRoute, private fb: FormBuilder) { }
+  // untuk mendisplay pertama kali
+  selectedLang = 'en';
+
+  constructor(private userService: UsersService, private router: Router, private rootaktif: ActivatedRoute, private fb: FormBuilder, public translateService: TranslateService) { }
 
 
   ngOnInit(): void{
@@ -30,8 +33,6 @@ export class UserListComponent implements OnInit {
 
     const id = this.rootaktif.snapshot.paramMap.get('id');
     this.isEdit = id != null;
-    // console.log(this.isEdit);
-    // console.log(id)
     if (this.isEdit) {
       this.subcription = this.userService.userList$
         .pipe(first((items) => items.length !== 0))
@@ -178,5 +179,9 @@ export class UserListComponent implements OnInit {
   }
   }
   
-  // make Form Validator 
+  // Transalate
+
+  setLanguage(lang: string) {
+    this.translateService.use(lang);
+  }
 }

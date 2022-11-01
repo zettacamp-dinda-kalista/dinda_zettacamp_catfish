@@ -1,16 +1,24 @@
 <div class="container">
   <div class="row">
+    <mat-form-field appearance="outline" class="custom">
+      <mat-label>Language</mat-label>
+      <mat-select  [(value)]="selectedLang" #lang (valueChange)="setLanguage(lang.value)">
+        <mat-option value="en">English</mat-option>
+        <mat-option value="in">Indonesian</mat-option>
+      </mat-select>
+    </mat-form-field>
+
     <div class="col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2">
       <form [formGroup]="signupForm" (ngSubmit)="onSubmit()">
         <mat-form-field class="example-full-width" appearance="fill">
-          <mat-label for="_id">ID </mat-label>
+          <mat-label for="_id">{{ "userForm._id" | translate }} </mat-label>
           <input matInput type="number" id="_id" formControlName="_id" class="form-control">
           <mat-error *ngIf="signupForm.get('_id')?.invalid" class="alert alert-danger"> This id is required
           </mat-error>
         </mat-form-field><br>
 
         <mat-form-field class="example-full-width" appearance="fill">
-          <mat-label for="name">Name </mat-label>
+          <mat-label for="name">{{ "userForm.name" | translate }} </mat-label>
           <input matInput type="text" id="name" formControlName="name" class="form-control">
           <mat-error *ngIf="signupForm.get('name')?.invalid" class="alert alert-danger">
             This name is required
@@ -18,19 +26,19 @@
         </mat-form-field><br>
         
         <mat-form-field class="example-full-width" appearance="fill">
-          <mat-label for="age">Age</mat-label>
+          <mat-label for="age">{{ "userForm.age" | translate }}</mat-label>
           <input matInput type="number" id="age" formControlName="age" class="form-control">
           <mat-error *ngIf="signupForm.get('age')?.invalid"> This age is required </mat-error>
         </mat-form-field><br>
 
         <mat-form-field class="example-full-width" appearance="fill">
-          <mat-label for="email">email </mat-label>
+          <mat-label for="email">{{ "userForm.email" | translate }} </mat-label>
           <input matInput type="email" id="email" formControlName="email" class="form-control">
           <mat-error *ngIf="this.signupForm.get('email')?.invalid" class="alert alert-danger">{{emailError()}}</mat-error>
         </mat-form-field><br>
 
         <mat-form-field class="example-full-width" appearance="fill">
-          <mat-label for="position">Position</mat-label>
+          <mat-label for="position">{{ "userForm.position" | translate }}</mat-label>
           <mat-select formControlName="position">
             <mat-option value="backend"> Backend </mat-option>
             <mat-option value="frondend"> FrondEnd </mat-option>
@@ -41,7 +49,7 @@
         </mat-form-field><br>
 
         <mat-form-field class="example-full-width" appearance="fill">
-          <mat-label for="status">status </mat-label>
+          <mat-label for="status">{{ "userForm.marital_status" | translate }} </mat-label>
           <mat-select formControlName="marital_status">
             <mat-option value="Married"> Married </mat-option>
             <mat-option value="Singgle"> Singgle </mat-option>
@@ -51,7 +59,7 @@
         </mat-form-field><br>
 
         <mat-radio-group formControlName="genders" aria-label="Select an option" >
-          <mat-label for="genders" class="genders">Gender :</mat-label>
+          <mat-label for="genders" class="genders">{{ "userForm.genders" | translate }} :</mat-label>
           <mat-radio-button value="Female">Female</mat-radio-button>
           <mat-radio-button value="Male">Male</mat-radio-button>
         </mat-radio-group><br><br><br>
@@ -63,25 +71,25 @@
         <div formArrayName="address" *ngFor="let creds of controls.controls; let i = index"  >
           <div [formGroupName]="i">
             <mat-form-field class="example-full-width" appearance="fill">
-              <mat-label for="address">Address: </mat-label>
+              <mat-label for="address">{{ "userForm.address" | translate }}</mat-label>
               <input matInput id="address" type="text" formControlName="address">
               <mat-error *ngIf="this.addr.at(i).get('address')?.invalid"> This address is required </mat-error>
             </mat-form-field><br>
 
             <mat-form-field class="example-full-width" appearance="fill">
-              <mat-label for="zip_code">Zip Code: </mat-label>
+              <mat-label for="zip_code">{{ "userForm.zip_code" | translate }}</mat-label>
               <input matInput id="zip_code" type="number" formControlName="zip_code">
               <mat-error *ngIf="this.addr.at(i).get('zip_code')?.invalid"> This zip code is required </mat-error>
             </mat-form-field><br>
 
             <mat-form-field class="example-full-width" appearance="fill">
-              <mat-label for="city">City: </mat-label>
+              <mat-label for="city">{{ "userForm.city" | translate }} </mat-label>
               <input matInput id="city" type="text" formControlName="city">
               <mat-error *ngIf="this.addr.at(i).get('city')?.invalid"> This city is required </mat-error>
             </mat-form-field><br>
 
             <mat-form-field class="example-full-width" appearance="fill">
-              <mat-label for="country">Country: </mat-label>
+              <mat-label for="country">{{ "userForm.country" | translate }}</mat-label>
               <input matInput id="country" type="text" formControlName="country">
               <mat-error *ngIf="this.addr.at(i).get('country')?.invalid"> This country is required </mat-error>
             </mat-form-field><br>

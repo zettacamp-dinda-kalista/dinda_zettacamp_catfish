@@ -61,7 +61,7 @@
         </a><br>
 
         <div formArrayName="address" *ngFor="let creds of controls.controls; let i = index"  >
-          <form [formGroupName]="i">
+          <div [formGroupName]="i">
             <mat-form-field class="example-full-width" appearance="fill">
               <mat-label for="address">Address: </mat-label>
               <input matInput id="address" type="text" formControlName="address">
@@ -89,7 +89,7 @@
             <button mat-raised-button color="warn" (click)="removeAddress(i)" *ngIf="controls.length > 1">
               Remove
             </button>
-          </form>
+          </div>
           
         </div>
 

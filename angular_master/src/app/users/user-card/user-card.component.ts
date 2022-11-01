@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { UsersService } from '../users.service';
 import { Router } from '@angular/router';
+import { User } from '../users.model';
 
 @Component({
   selector: 'app-user-card',
@@ -9,20 +10,19 @@ import { Router } from '@angular/router';
 })
 export class UserCardComponent implements OnInit {
 
-  users: any;
+  filters: string = '';
+  Users: any;
 
   constructor(private userService: UsersService, private router: Router) { }
 
   ngOnInit(): void {
     this.userService.userList$.subscribe(data => {
-      this.users = data;
-
-      console.log(this.users);
-      
+      this.Users = data;
+      console.log(this.Users); 
     })
   }
+
   editUser(editData: any){
     this.router.navigate(['/form-edit', editData._id]);
   }
-
 }

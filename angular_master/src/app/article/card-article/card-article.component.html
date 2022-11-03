@@ -1,15 +1,8 @@
 
-<!-- <button (click)="getPosts()">Button</button> -->
+<app-list-article class="example-card" *ngFor="let post of newPost" [post]="post">
+</app-list-article>
 
-<mat-card class="example-card" *ngFor="let post of newPost">
-    <mat-card-title-group>
-        <mat-card-title> {{ post.title }} </mat-card-title>
-    </mat-card-title-group>
-    <mat-card-content>
-        {{ post.body }}
-    </mat-card-content>
-    <button (click)="editArticle(post)"> edit </button>
-</mat-card>
+
 <!-- 
 <button (click)="createPost()">Button Create</button>
 {{displayPost | async | json}} -->

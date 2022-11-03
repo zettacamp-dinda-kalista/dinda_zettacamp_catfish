@@ -32,9 +32,6 @@ export class CardArticleComponent implements OnInit {
     })
   }
 
-  editArticle(editData: any){
-    this.router.navigate(['/edit-article', editData.id])
-  }
 
   // createPost(){
   //   const datum: Post = {

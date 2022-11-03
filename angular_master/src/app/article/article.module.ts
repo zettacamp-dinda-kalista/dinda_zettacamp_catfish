@@ -48,14 +48,16 @@ import { MatTableModule } from '@angular/material/table';
 import { CardDetailComponent } from './card-detail/card-detail.component';
 import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule} from '@angular/forms'
-import { BrowserAnimationsModule} from '@angular/platform-browser/animations'
+import { BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { ListArticleComponent } from './card-article/list-article/list-article.component'
 
 
 
 @NgModule({
   declarations: [
     CardArticleComponent,
-    CardDetailComponent
+    CardDetailComponent,
+    ListArticleComponent
   ],
   imports: [
     CommonModule,

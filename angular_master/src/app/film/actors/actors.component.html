@@ -1,0 +1,15 @@
+<mat-drawer-container class="example-container" autosize>
+    <div class="container">
+      <div class="sidenav">
+        <app-sidenav></app-sidenav>
+        <!-- <a routerLink="/movie-list" routerLinkActive="active" ariaCurrentWhenActive="page" class="movie-list"><button (click)="movieList()" mat-raised-button>Movie</button></a>
+        <a routerLink="/actor-list" routerLinkActive="active" ariaCurrentWhenActive="page" class="movie-list"><button (click)="actorList()" mat-raised-button>Actors</button></a>
+        <button mat-raised-button>About</button> -->
+      </div>
+  
+      <div class="example-sidenav-content">
+          <app-actors-card  *ngFor="let actorss of actorCard" [actors]="actorss" (click)="actorDetail(actorss)"></app-actors-card>
+      </div>
+    </div>
+  </mat-drawer-container>
+  

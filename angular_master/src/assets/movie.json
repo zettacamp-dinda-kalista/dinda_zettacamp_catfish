@@ -1,0 +1,107 @@
+[
+    {
+        "id": 1,
+        "img": "https://tse2.mm.bing.net/th?id=OIP.gImzzgGCjb8M52AoHbvVmAHaLv&pid=Api&P=0",
+        "judul": "Dragon The World",
+        "durasi": "1 jam 20 menit",
+        "producer": "Dinda Kalista",
+        "company": "Dinda Tv",
+        "sinopsi": "Ketika kau pergi meninggalkanku tanpa sebab ku tak merasa kan sedih sama sekali, yaa bodo amat dah",
+        "actor": [
+          {
+            "id": 7,
+            "nama": "Yoona",
+            "deskripsi": "Actris",
+            "img": "https://tse1.mm.bing.net/th?id=OIP.ihRQscWAQBWjUo3gwMbRGwHaKX&pid=Api&P=0"
+          },
+          {
+            "id": 8,
+            "nama": "Dian Sastro",
+            "deskripsi": "Actris",
+            "img": "https://img.okezone.com/content/2019/11/20/481/2132428/anak-sulungnya-autisme-dian-sastro-jangan-malu-apalagi-disesali-UzA3GWeMva.jpg"
+          },
+          {
+            "id": 9,
+            "nama": "Ikbal Ramadhan",
+            "deskripsi": "Actris",
+            "img": "https://tse1.mm.bing.net/th?id=OIP.y6hL1BowRmT8AG51HnoxigHaJ3&pid=Api&P=0"
+          }
+          
+        ]
+      },
+      {
+        "id": 2,
+        "img": "https://tse3.mm.bing.net/th?id=OIP.I0yvfHRC95LD7do7D-Nr8wAAAA&pid=Api&P=0",
+        "judul": "Dilan 1990",
+        "durasi": "1 jam 30 menit",
+        "producer": "Dinda Kalista",
+        "company": "Dinda Tv",
+        "sinopsi": "Ketika kau pergi meninggalkanku tanpa sebab ku tak merasa kan sedih sama sekali, yaa bodo amat dah",
+        "actor": [
+          {
+            "id": 8,
+            "nama": "Dian Sastro",
+            "deskripsi": "Actris",
+            
+            "img": "https://img.okezone.com/content/2019/11/20/481/2132428/anak-sulungnya-autisme-dian-sastro-jangan-malu-apalagi-disesali-UzA3GWeMva.jpg"
+          },
+          {
+            "id": 9,
+            "nama": "Pevita Pearce",
+            "deskripsi": "Actris",
+            "img": "https://www.dailysia.com/wp-content/uploads/2019/06/pevita_mid.jpg?x99839",
+            "producer": "Dinda Kalista",
+            "company": "Dinda Tv",
+            "sinopsi": "Ketika kau pergi meninggalkanku tanpa sebab ku tak merasa kan sedih sama sekali, yaa bodo amat dah"
+          },
+          {
+            "id": 10,
+            "nama": "Ayu Laksmi",
+            "deskripsi": "Actris",
+            "img": "https://cdn1-production-images-kly.akamaized.net/8QhlFWa1eW7a7m1fBzE4O2iASTw=/640x853/smart/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/2396211/original/028496400_1540899660-Ayu_Laksmi.jpg",
+            "producer": "Dinda Kalista",
+            "company": "Dinda Tv",
+            "sinopsi": "Ketika kau pergi meninggalkanku tanpa sebab ku tak merasa kan sedih sama sekali, yaa bodo amat dah"
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "img": "https://tse2.mm.bing.net/th?id=OIP.EZJdYf7Dt4dSsXbsIp05BQHaKl&pid=Api&P=0",
+        "judul": "Kartini",
+        "durasi": "1 jam 45 menit",
+        "producer": "Dinda Kalista",
+        "company": "Dinda Tv",
+        "sinopsi": "Ketika kau pergi meninggalkanku tanpa sebab ku tak merasa kan sedih sama sekali, yaa bodo amat dah"
+      },
+      {
+        "id": 4,
+        "img": "https://assets-a2.kompasiana.com/items/album/2017/10/07/poster-ps-59d859e2e3f7bc69cb28b202.jpg?t=o&v=760",
+        "judul": "Pengabdi Setan",
+        "durasi": "1 jam 10 menit",
+        "producer": "Dinda Kalista",
+        "company": "Dinda Tv",
+        "sinopsi": "Ketika kau pergi meninggalkanku tanpa sebab ku tak merasa kan sedih sama sekali, yaa bodo amat dah"
+      },
+      {
+        "id": 5,
+        "img": "https://tse3.mm.bing.net/th?id=OIP.YTGiFediQ3UclgJIMHRGtQHaLQ&pid=Api&P=0",
+        "judul": "Sebelum Iblis",
+        "durasi": "1 jam 5 menit",
+        "producer": "Dinda Kalista",
+        "company": "Dinda Tv",
+        "sinopsi": "Ketika kau pergi meninggalkanku tanpa sebab ku tak merasa kan sedih sama sekali, yaa bodo amat dah"
+      },
+      {
+        "id": 6,
+        "img": "https://tse1.mm.bing.net/th?id=OIP.HvXyktPUdhKfs6Q27RFhSgHaKe&pid=Api&P=0",
+        "judul": "Jalangkung 3",
+        "durasi": "1 jam 50 menit",
+        "producer": "Dinda Kalista",
+        "company": "Dinda Tv",
+        "sinopsi": "Ketika kau pergi meninggalkanku tanpa sebab ku tak merasa kan sedih sama sekali, yaa bodo amat dah"
+      }
+]
+    
+
+  

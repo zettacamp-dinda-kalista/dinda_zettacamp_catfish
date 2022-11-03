@@ -1,0 +1,73 @@
+<mat-drawer-container class="example-container" autosize>
+    <div class="container">
+      <div class="sidenav">
+        <app-sidenav></app-sidenav>
+      </div>
+  
+      <div class="example-sidenav-content">
+        <mat-tab-group>
+            
+            <mat-tab label="Detail" >
+                <div class="content" >
+                    <div class="img">
+                        <div class="cover">
+                            <img [src]="movieDetail.img" alt="">
+                        </div>
+                    </div>
+                    <div class="detail">
+                        <table>
+                            <tr>
+                                <td>Title</td>
+                                <td>:</td>
+                                <td>{{ movieDetail.judul }}</td>
+                            </tr>
+                            <tr>
+                                <td>Producer</td>
+                                <td>:</td>
+                                <td>{{ movieDetail.producer }}</td>
+                            </tr>
+                            <tr>
+                                <td>Company</td>
+                                <td>:</td>
+                                <td>{{ movieDetail.company }}</td>
+                            </tr>
+                            <tr>
+                                <td>Sinopsis</td>
+                                <td>:</td>
+                                <td></td>
+                            </tr>
+                        </table>
+                        <p>
+                            {{ movieDetail.sinopsi }}
+                        </p>
+            
+                    </div>
+                </div>
+            </mat-tab>
+
+            <mat-tab label="Actor"> 
+                <div class="content">
+                    <div class="row">
+                        <div *ngFor="let actor of movieDetail.actor" class="col">
+                            <mat-card class="example-card">
+                                <div class="imgc">
+                                  <img
+                                  mat-card-image
+                                  [src]="actor.img"
+                                  alt="Photo of a Shiba Inu"
+                                  />
+                                </div>
+                                <mat-card-content>
+                                  <h2>{{ actor.nama }}</h2>
+                                </mat-card-content>
+                              </mat-card>
+                        </div>
+                    </div>
+                </div>
+            </mat-tab>
+          </mat-tab-group>
+      </div>
+    </div>
+  </mat-drawer-container>
+  
+  
